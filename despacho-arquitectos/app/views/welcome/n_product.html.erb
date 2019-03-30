@@ -1,0 +1,34 @@
+<!-- links bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- fin links bootstrap -->
+<div class="container col-lg-6">
+	<form>
+	  <div class="form-group">
+	    <h2 class="centrado"><label>Dar de alta material</label></h2>
+	    <label>Nombre</label>
+	    <input type="text" class="form-control" placeholder="Nombre del nuevo material" name="NombreMaterial">
+	  </div>
+	  <div class="form-group">
+	    <label>Precio unitario</label>
+	    <input type="text" class="form-control" name="PrecioUnitario" placeholder="$0">
+	  </div>
+	  <div class="form-group">
+	    <label>Categoria</label>
+	    <select class="form-control" name="Categoria">
+	      <option>Obra negra</option>
+	      <option>Acabados</option>
+	      <option>Instalaciones</option>
+	    </select>
+	  </div>
+	  <div class="centrado">
+	  	<button style="width: 150px" type="submit" class="btn btn-primary">Guardar</button>
+	  </div>
+	</form>
+ </div>
+<style type="text/css">
+  .centrado{
+  text-align: center;
+</style>
