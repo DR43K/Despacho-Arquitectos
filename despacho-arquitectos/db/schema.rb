@@ -11,6 +11,7 @@
 # It's strongly recommended that you check this file into your version control system.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20190409041723) do
 
   create_table "almacens", force: :cascade do |t|
@@ -22,12 +23,15 @@ ActiveRecord::Schema.define(version: 20190409041723) do
     t.string "estado_almacen"
     t.string "pais"
 =======
+=======
+>>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 ActiveRecord::Schema.define(version: 20190330062706) do
 
   create_table "pruebas", force: :cascade do |t|
     t.string "nombre"
     t.integer "precio"
     t.string "categoria"
+<<<<<<< HEAD
 >>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -93,5 +97,11 @@ ActiveRecord::Schema.define(version: 20190330062706) do
   end
 
 =======
+>>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
+=======
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
 >>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 end
