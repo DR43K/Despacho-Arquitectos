@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'provedores/provedores'
+
   get 'welcome/n_product'
   get "n_product", to: "welcome#n_product"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
@@ -7,3 +9,5 @@ Rails.application.routes.draw do
   post '/registrar_material', to: 'welcome#registrar'
   get '/ya', to: 'welcome#ya'
 end
+
+
