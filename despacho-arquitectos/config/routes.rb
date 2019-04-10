@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :services
   resources :almacens
   get 'profesional', to: 'profesional#index'
   post 'new_p', to: 'profesional#nuevo'

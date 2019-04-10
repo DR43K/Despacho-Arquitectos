@@ -24,15 +24,6 @@ ActiveRecord::Schema.define(version: 20190409041723) do
     t.datetime "updated_at", null: false
   end
 
-
-  create_table "pruebas", force: :cascade do |t|
-    t.string "nombre"
-    t.integer "precio"
-    t.string "categoria"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "especialidads", force: :cascade do |t|
     t.integer "terceros_idterceros"
     t.string "nombre_especialidad"
@@ -66,6 +57,14 @@ ActiveRecord::Schema.define(version: 20190409041723) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "apellido"
+  end
+
+  create_table "pruebas", force: :cascade do |t|
+    t.string "nombre"
+    t.integer "precio"
+    t.string "categoria"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "terceros", force: :cascade do |t|
