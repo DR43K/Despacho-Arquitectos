@@ -1,15 +1,12 @@
-class ProfesionalController < ApplicationController
-
-	skip_before_action :verify_authenticity_token
-	layout 'etc'
-  def index
-  	@espe = Professional.select(:especialidad).distinct
+class ProvedoresController < ApplicationController
+  skip_before_action :verify_authenticity_token
+  def provedores
   end
 
   def nuevo
   	nuevo = Tercero.new
 	nuevo.nombre = params["nombre"] + " " + params["apellidos"]
-	nuevo.profesionista = true
+	nuevo.proveedor = true
 	nuevo.direccion = params["pais"] + " " + params["ciudad"] + " " + params["estado"] + " " + params["direccion"] + " " + "CP " + params["codigo_postal"]
 	nuevo.codigo_postal = params["codigo_postal"] 
 	nuevo.ciudad = params["ciudad"]
@@ -21,31 +18,10 @@ class ProfesionalController < ApplicationController
 	nuevo.rfc = params["rfc"]
 	nuevo.forma_juridica = params["forma_j"]
 	nuevo.estado_tercero = params["estado_tercero"]
-	nuevo.save
-
-	profesiones = params["profesioness"]
-	pr = profesiones.split("\r\n")
-	pr.each do |x|
-		nu = Profesion.new
-		nu.nombre_profesion = x
-		nu.terceros_idterceros = nuevo.id
-		nu.save
-	end
-
-	especialidades = params["especialidades"]
-	espe = especialidades.split("\r\n")
-	espe.each do |x|
-		nu = Especialidad.new
-		nu.nombre_especialidad = x
-		nu.terceros_idterceros = nuevo.id
-		nu.save
-	end
-
-	nuevo.profesiones = profesiones
-	nuevo.especialidades = especialidades
+	
 
 	if nuevo.save
-  		redirect_to '/profesional?status=0'
+  		redirect_to '/provedores_provedores?status=0'
   	end
   end
 
@@ -70,7 +46,7 @@ class ProfesionalController < ApplicationController
 
   	nuevo = Tercero.find(params["id_tercero"])
 	nuevo.nombre = params["nombre"] + " " + params["apellidos"]
-	nuevo.profesionista = true
+	nuevo.proveedor = true
 	nuevo.direccion = params["pais"] + " " + params["ciudad"] + " " + params["estado"] + " " + params["direccion"] + " " + "CP " + params["codigo_postal"]
 	nuevo.codigo_postal = params["codigo_postal"] 
 	nuevo.ciudad = params["ciudad"]
@@ -82,37 +58,15 @@ class ProfesionalController < ApplicationController
 	nuevo.rfc = params["rfc"]
 	nuevo.forma_juridica = params["forma_j"]
 	nuevo.estado_tercero = params["estado_tercero"]
-	nuevo.save
-
-	profesiones = params["profesioness"]
-	pr = profesiones.split("\r\n")
-	pr.each do |x|
-		nu = Profesion.new
-		nu.nombre_profesion = x
-		nu.terceros_idterceros = nuevo.id
-		nu.save
-	end
-
-	especialidades = params["especialidades"]
-	espe = especialidades.split("\r\n")
-	espe.each do |x|
-		nu = Especialidad.new
-		nu.nombre_especialidad = x
-		nu.terceros_idterceros = nuevo.id
-		nu.save
-	end
-
-	nuevo.profesiones = profesiones
-	nuevo.especialidades = especialidades
 
 	if nuevo.save
-  		redirect_to '/profesional?status=2'
+  		redirect_to '/provedores_provedores?status=2'
   	end
   end
 
   def eliminar
   	tercero = Tercero.find(params["format"])
   	tercero.destroy
-  	redirect_to '/ver'
+  	redirect_to '/provedores_mostrar'
   end
 end

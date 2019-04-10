@@ -75,7 +75,7 @@
 			     <td><%= x.estado_tercero %> </td>
 			     <td><%= x.profesiones %> </td>
 			     <td><%= x.especialidades %> </td>
-			     <td><%= button_to 'Editar', editar_terceros_path(x.id), :method => :get, :class => "btn btn-warning " %></td>   
+			     <td><%= button_to 'Editar',provedores_editar_path(x.id), :method => :get, :class => "btn btn-warning " %></td>   
 			     <td><%= button_to 'Eliminar', eliminar_terceros_path(x.id), :method => :get, :class => "btn btn-danger" %></td> 
 		    </tr>
 	    <% end %>

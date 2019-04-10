@@ -4547,6 +4547,7 @@ Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.0ms)
 >>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 
 
+<<<<<<< HEAD
 Started GET "/services" for ::1 at 2019-04-10 08:30:20 -0500
   [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   
@@ -4565,6 +4566,32 @@ activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
 actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
 actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+=======
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePruebas (20190330062706)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "pruebas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "precio" integer, "categoria" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190330062706"]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2019-04-09 23:00:54 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 150ms (Views: 105.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-04-09 23:01:08 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+>>>>>>> 9c043b955c127c4b3d47658b2fe741cddf64f73e
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
@@ -4591,6 +4618,7 @@ puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/services" for ::1 at 2019-04-10 08:30:23 -0500
   [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   
@@ -4609,6 +4637,1149 @@ activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
 actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
 actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+=======
+Started GET "/profesional" for ::1 at 2019-04-09 23:01:12 -0500
+Processing by ProfesionalController#index as HTML
+  Rendering profesional/index.html.erb within layouts/application
+  Rendered profesional/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 147ms (Views: 102.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profesional" for ::1 at 2019-04-09 23:02:10 -0500
+Processing by ProfesionalController#index as HTML
+  Rendering profesional/index.html.erb within layouts/application
+  Rendered profesional/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 205ms (Views: 147.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:02:39 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/application (72.0ms)
+Completed 200 OK in 243ms (Views: 176.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:03:05 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 215ms (Views: 155.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:03:24 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 186ms (Views: 135.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:03:26 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 194ms (Views: 136.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:04:08 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 183ms (Views: 136.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:04:17 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 184ms (Views: 130.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:04:31 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 199ms (Views: 143.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:04:33 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 221ms (Views: 160.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:05:29 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 217ms (Views: 165.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:06:35 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 215ms (Views: 158.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:07:12 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 197ms (Views: 139.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:07:59 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 206ms (Views: 149.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:08:25 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 175ms (Views: 129.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:08:36 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 160ms (Views: 116.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:11:16 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (33.0ms)
+Completed 200 OK in 178ms (Views: 115.7ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:11:54 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (6.0ms)
+Completed 200 OK in 140ms (Views: 89.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:12:15 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (8.0ms)
+Completed 200 OK in 159ms (Views: 101.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:12:30 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (7.0ms)
+Completed 200 OK in 146ms (Views: 94.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:12:53 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (5.0ms)
+Completed 200 OK in 119ms (Views: 80.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:13:07 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (7.0ms)
+Completed 200 OK in 124ms (Views: 80.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:13:40 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (6.0ms)
+Completed 200 OK in 117ms (Views: 80.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:18:44 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  Rendered profesional/mostrar.html.erb within layouts/etc (20.3ms)
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/carlo/OneDrive/Documentos/Rails/Despacho-Arquitectos/despacho-arquitectos/app/views/profesional/mostrar.html.erb:77: syntax error, unexpected ')', expecting =>
+...get, {class: 'btn btn-small'} );@output_buffer.safe_append='...
+...                               ^
+C:/Users/carlo/OneDrive/Documentos/Rails/Despacho-Arquitectos/despacho-arquitectos/app/views/profesional/mostrar.html.erb:80: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;	     end 
+         	        ^
+C:/Users/carlo/OneDrive/Documentos/Rails/Despacho-Arquitectos/despacho-arquitectos/app/views/profesional/mostrar.html.erb:91: syntax error, unexpected keyword_ensure, expecting ')'
+C:/Users/carlo/OneDrive/Documentos/Rails/Despacho-Arquitectos/despacho-arquitectos/app/views/profesional/mostrar.html.erb:93: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/profesional/mostrar.html.erb:77: syntax error, unexpected ')', expecting =>
+app/views/profesional/mostrar.html.erb:80: syntax error, unexpected keyword_end, expecting ')'
+app/views/profesional/mostrar.html.erb:91: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/profesional/mostrar.html.erb:93: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/ver" for ::1 at 2019-04-09 23:19:42 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (61.0ms)
+Completed 500 Internal Server Error in 214ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 4, expected 0..3)):
+    74: 			     <td><%= x.estado_tercero %> </td>
+    75: 			     <td><%= x.profesiones %> </td>
+    76: 			     <td><%= x.especialidades %> </td>
+    77: 			     <td><%= button_to 'Editar', {class: 'btn btn-small'}, editar_terceros_path(x.id), :method => :get %></td>   
+    78: 			     <td><%= button_to 'Eliminar', eliminar_terceros_path(x.id), :method => :get %></td> 
+    79: 		    </tr>
+    80: 	    <% end %>
+  
+app/views/profesional/mostrar.html.erb:77:in `block in _app_views_profesional_mostrar_html_erb___590204756_36668700'
+app/views/profesional/mostrar.html.erb:59:in `_app_views_profesional_mostrar_html_erb___590204756_36668700'
+Started GET "/ver" for ::1 at 2019-04-09 23:21:01 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  Rendered profesional/mostrar.html.erb within layouts/etc (2.0ms)
+Completed 500 Internal Server Error in 153ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/carlo/OneDrive/Documentos/Rails/Despacho-Arquitectos/despacho-arquitectos/app/views/profesional/mostrar.html.erb:77: syntax error, unexpected ',', expecting ')'
+...r.append=( button_to ('Editar', editar_terceros_path(x.id), ...
+...                               ^
+C:/Users/carlo/OneDrive/Documentos/Rails/Despacho-Arquitectos/despacho-arquitectos/app/views/profesional/mostrar.html.erb:77: syntax error, unexpected ',', expecting ')'
+...r', editar_terceros_path(x.id), :method => :get) );@output_b...
+...                               ^
+C:/Users/carlo/OneDrive/Documentos/Rails/Despacho-Arquitectos/despacho-arquitectos/app/views/profesional/mostrar.html.erb:77: syntax error, unexpected ')', expecting keyword_end
+..._path(x.id), :method => :get) );@output_buffer.safe_append='...
+...                               ^):
+  
+app/views/profesional/mostrar.html.erb:77: syntax error, unexpected ',', expecting ')'
+app/views/profesional/mostrar.html.erb:77: syntax error, unexpected ',', expecting ')'
+app/views/profesional/mostrar.html.erb:77: syntax error, unexpected ')', expecting keyword_end
+Started GET "/ver" for ::1 at 2019-04-09 23:21:30 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (7.0ms)
+Completed 200 OK in 156ms (Views: 104.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:21:44 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (5.0ms)
+Completed 200 OK in 122ms (Views: 79.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:22:43 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (7.0ms)
+Completed 200 OK in 162ms (Views: 104.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:23:14 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (6.0ms)
+Completed 200 OK in 143ms (Views: 91.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:23:26 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (5.0ms)
+Completed 200 OK in 143ms (Views: 84.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:23:49 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (7.0ms)
+Completed 200 OK in 132ms (Views: 85.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:24:28 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (8.0ms)
+Completed 200 OK in 156ms (Views: 100.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:24:34 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (5.0ms)
+Completed 200 OK in 136ms (Views: 83.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:25:19 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (8.0ms)
+Completed 200 OK in 155ms (Views: 103.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:25:30 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (6.0ms)
+Completed 200 OK in 157ms (Views: 104.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:26:06 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (7.0ms)
+Completed 200 OK in 132ms (Views: 93.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:26:41 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (6.0ms)
+Completed 200 OK in 163ms (Views: 100.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:26:49 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (5.0ms)
+Completed 200 OK in 122ms (Views: 75.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:28:15 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (6.0ms)
+Completed 200 OK in 142ms (Views: 88.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:28:43 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (5.0ms)
+Completed 200 OK in 102ms (Views: 68.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:29:21 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (6.0ms)
+Completed 200 OK in 133ms (Views: 87.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:29:56 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (5.0ms)
+Completed 200 OK in 114ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:30:16 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (6.0ms)
+Completed 200 OK in 162ms (Views: 103.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:30:32 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (7.0ms)
+Completed 200 OK in 170ms (Views: 111.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:30:57 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (6.0ms)
+Completed 200 OK in 137ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:31:18 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (6.0ms)
+Completed 200 OK in 161ms (Views: 100.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:31:40 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (7.5ms)
+Completed 200 OK in 170ms (Views: 109.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:31:47 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (5.0ms)
+Completed 200 OK in 135ms (Views: 81.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:32:02 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (5.0ms)
+Completed 200 OK in 118ms (Views: 75.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:32:22 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (7.0ms)
+Completed 200 OK in 164ms (Views: 105.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:32:30 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (5.0ms)
+Completed 200 OK in 145ms (Views: 86.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/editar_terceros.2" for ::1 at 2019-04-09 23:32:32 -0500
+Processing by ProfesionalController#editar as 
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profesional/editar.html.erb within layouts/etc
+  Rendered profesional/editar.html.erb within layouts/etc (2.0ms)
+Completed 200 OK in 1081ms (Views: 508.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/editar_terceros.2" for ::1 at 2019-04-09 23:32:40 -0500
+Processing by ProfesionalController#editar as 
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profesional/editar.html.erb within layouts/etc
+  Rendered profesional/editar.html.erb within layouts/etc (2.0ms)
+Completed 200 OK in 954ms (Views: 518.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:33:41 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (6.0ms)
+Completed 200 OK in 141ms (Views: 89.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:33:52 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (5.0ms)
+Completed 200 OK in 125ms (Views: 83.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:33:58 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (5.0ms)
+Completed 200 OK in 114ms (Views: 76.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:34:08 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (5.0ms)
+Completed 200 OK in 123ms (Views: 86.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:34:13 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (7.0ms)
+Completed 200 OK in 127ms (Views: 87.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:34:31 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (6.0ms)
+Completed 200 OK in 102ms (Views: 72.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:34:39 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (7.0ms)
+Completed 200 OK in 136ms (Views: 89.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:34:55 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (6.0ms)
+Completed 200 OK in 131ms (Views: 93.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:35:06 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (5.0ms)
+Completed 200 OK in 122ms (Views: 83.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/editar_terceros.2" for ::1 at 2019-04-09 23:35:13 -0500
+Processing by ProfesionalController#editar as 
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profesional/editar.html.erb within layouts/etc
+  Rendered profesional/editar.html.erb within layouts/etc (2.0ms)
+Completed 200 OK in 893ms (Views: 428.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/editar_terceros.2" for ::1 at 2019-04-09 23:35:39 -0500
+Processing by ProfesionalController#editar as 
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profesional/editar.html.erb within layouts/etc
+  Rendered profesional/editar.html.erb within layouts/etc (1.0ms)
+Completed 200 OK in 910ms (Views: 417.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver?utf8=%E2%9C%93&nombre=&apellido=&profesion=&ciudad=" for ::1 at 2019-04-09 23:37:42 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Parameters: {"utf8"=>"✓", "nombre"=>"", "apellido"=>"", "profesion"=>"", "ciudad"=>""}
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (5.0ms)
+Completed 200 OK in 143ms (Views: 88.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver?utf8=%E2%9C%93&nombre=&apellido=&profesion=sistemas&ciudad=" for ::1 at 2019-04-09 23:37:50 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Parameters: {"utf8"=>"✓", "nombre"=>"", "apellido"=>"", "profesion"=>"sistemas", "ciudad"=>""}
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (12.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros" WHERE (LOWER(profesiones) like '%' || LOWER('sistemas') || '%' )[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (17.0ms)
+Completed 200 OK in 148ms (Views: 84.5ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/ver?utf8=%E2%9C%93&nombre=&apellido=&profesion=&ciudad=" for ::1 at 2019-04-09 23:37:54 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Parameters: {"utf8"=>"✓", "nombre"=>"", "apellido"=>"", "profesion"=>"", "ciudad"=>""}
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (5.0ms)
+Completed 200 OK in 159ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens" for ::1 at 2019-04-09 23:38:02 -0500
+Processing by AlmacensController#index as HTML
+  Rendering almacens/index.html.erb within layouts/application
+  [1m[36mAlmacen Load (0.0ms)[0m  [1m[34mSELECT "almacens".* FROM "almacens"[0m
+  Rendered almacens/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 200ms (Views: 141.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/almacens" for ::1 at 2019-04-09 23:38:24 -0500
+Processing by AlmacensController#index as HTML
+  Rendering almacens/index.html.erb within layouts/application
+  [1m[36mAlmacen Load (0.0ms)[0m  [1m[34mSELECT "almacens".* FROM "almacens"[0m
+  Rendered almacens/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 162ms (Views: 113.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens" for ::1 at 2019-04-09 23:38:40 -0500
+Processing by AlmacensController#index as HTML
+  Rendering almacens/index.html.erb within layouts/application
+  [1m[36mAlmacen Load (0.0ms)[0m  [1m[34mSELECT "almacens".* FROM "almacens"[0m
+  Rendered almacens/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 164ms (Views: 118.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/1" for ::1 at 2019-04-09 23:39:14 -0500
+Processing by AlmacensController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlmacen Load (0.0ms)[0m  [1m[34mSELECT  "almacens".* FROM "almacens" WHERE "almacens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering almacens/show.html.erb within layouts/application
+  Rendered almacens/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 191ms (Views: 135.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens" for ::1 at 2019-04-09 23:39:31 -0500
+Processing by AlmacensController#index as HTML
+  Rendering almacens/index.html.erb within layouts/application
+  [1m[36mAlmacen Load (0.0ms)[0m  [1m[34mSELECT "almacens".* FROM "almacens"[0m
+  Rendered almacens/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 164ms (Views: 114.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens" for ::1 at 2019-04-09 23:39:48 -0500
+Processing by AlmacensController#index as HTML
+  Rendering almacens/index.html.erb within layouts/application
+  [1m[36mAlmacen Load (1.0ms)[0m  [1m[34mSELECT "almacens".* FROM "almacens"[0m
+  Rendered almacens/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 166ms (Views: 120.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/almacens" for ::1 at 2019-04-09 23:39:54 -0500
+Processing by AlmacensController#index as HTML
+  Rendering almacens/index.html.erb within layouts/application
+  [1m[36mAlmacen Load (0.0ms)[0m  [1m[34mSELECT "almacens".* FROM "almacens"[0m
+  Rendered almacens/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 166ms (Views: 118.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens" for ::1 at 2019-04-09 23:40:38 -0500
+Processing by AlmacensController#index as HTML
+  Rendering almacens/index.html.erb within layouts/application
+  Rendered almacens/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 197ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/carlo/OneDrive/Documentos/Rails/Despacho-Arquitectos/despacho-arquitectos/app/views/almacens/index.html.erb:10: syntax error, unexpected ','
+...vo almacen', new_almacen_path:, :class => "btn btn-secondary...
+...                               ^
+C:/Users/carlo/OneDrive/Documentos/Rails/Despacho-Arquitectos/despacho-arquitectos/app/views/almacens/index.html.erb:26: syntax error, unexpected keyword_do_block, expecting keyword_end
+'.freeze;     @almacens.each do |almacen| 
+                               ^
+C:/Users/carlo/OneDrive/Documentos/Rails/Despacho-Arquitectos/despacho-arquitectos/app/views/almacens/index.html.erb:52: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/almacens/index.html.erb:10: syntax error, unexpected ','
+app/views/almacens/index.html.erb:26: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/views/almacens/index.html.erb:52: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/almacens" for ::1 at 2019-04-09 23:41:04 -0500
+Processing by AlmacensController#index as HTML
+  Rendering almacens/index.html.erb within layouts/application
+  [1m[36mAlmacen Load (1.0ms)[0m  [1m[34mSELECT "almacens".* FROM "almacens"[0m
+  Rendered almacens/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 180ms (Views: 130.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/almacens" for ::1 at 2019-04-09 23:41:10 -0500
+Processing by AlmacensController#index as HTML
+  Rendering almacens/index.html.erb within layouts/application
+  [1m[36mAlmacen Load (0.0ms)[0m  [1m[34mSELECT "almacens".* FROM "almacens"[0m
+  Rendered almacens/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 165ms (Views: 117.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens" for ::1 at 2019-04-09 23:41:32 -0500
+Processing by AlmacensController#index as HTML
+  Rendering almacens/index.html.erb within layouts/application
+  [1m[36mAlmacen Load (1.0ms)[0m  [1m[34mSELECT "almacens".* FROM "almacens"[0m
+  Rendered almacens/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 199ms (Views: 143.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/almacens" for ::1 at 2019-04-09 23:41:38 -0500
+Processing by AlmacensController#index as HTML
+  Rendering almacens/index.html.erb within layouts/application
+  [1m[36mAlmacen Load (0.0ms)[0m  [1m[34mSELECT "almacens".* FROM "almacens"[0m
+  Rendered almacens/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 158ms (Views: 124.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens" for ::1 at 2019-04-09 23:42:15 -0500
+Processing by AlmacensController#index as HTML
+  Rendering almacens/index.html.erb within layouts/application
+  [1m[36mAlmacen Load (0.0ms)[0m  [1m[34mSELECT "almacens".* FROM "almacens"[0m
+  Rendered almacens/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 199ms (Views: 143.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:42:23 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (6.0ms)
+Completed 200 OK in 140ms (Views: 90.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:42:33 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (4.0ms)
+Completed 200 OK in 133ms (Views: 80.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:42:46 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (6.0ms)
+Completed 200 OK in 124ms (Views: 87.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:43:31 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (6.0ms)
+Completed 200 OK in 105ms (Views: 70.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens" for ::1 at 2019-04-09 23:43:38 -0500
+Processing by AlmacensController#index as HTML
+  Rendering almacens/index.html.erb within layouts/application
+  [1m[36mAlmacen Load (1.0ms)[0m  [1m[34mSELECT "almacens".* FROM "almacens"[0m
+  Rendered almacens/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 191ms (Views: 131.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/almacens/new" for ::1 at 2019-04-09 23:43:40 -0500
+Processing by AlmacensController#new as HTML
+  Rendering almacens/new.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (136.6ms)
+  Rendered almacens/new.html.erb within layouts/application (173.6ms)
+Completed 200 OK in 344ms (Views: 296.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/new" for ::1 at 2019-04-09 23:44:41 -0500
+Processing by AlmacensController#new as HTML
+  Rendering almacens/new.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (4.0ms)
+  Rendered almacens/new.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 210ms (Views: 164.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/new" for ::1 at 2019-04-09 23:44:57 -0500
+Processing by AlmacensController#new as HTML
+  Rendering almacens/new.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (5.0ms)
+  Rendered almacens/new.html.erb within layouts/application (50.0ms)
+Completed 200 OK in 258ms (Views: 201.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/new" for ::1 at 2019-04-09 23:45:38 -0500
+Processing by AlmacensController#new as HTML
+  Rendering almacens/new.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (7.0ms)
+  Rendered almacens/new.html.erb within layouts/application (74.0ms)
+Completed 200 OK in 279ms (Views: 222.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/new" for ::1 at 2019-04-09 23:45:46 -0500
+Processing by AlmacensController#new as HTML
+  Rendering almacens/new.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (6.0ms)
+  Rendered almacens/new.html.erb within layouts/application (57.0ms)
+Completed 200 OK in 247ms (Views: 201.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/new" for ::1 at 2019-04-09 23:46:05 -0500
+Processing by AlmacensController#new as HTML
+  Rendering almacens/new.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (9.0ms)
+  Rendered almacens/new.html.erb within layouts/application (49.0ms)
+Completed 200 OK in 231ms (Views: 177.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/new" for ::1 at 2019-04-09 23:46:37 -0500
+Processing by AlmacensController#new as HTML
+  Rendering almacens/new.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (4.0ms)
+  Rendered almacens/new.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 232ms (Views: 177.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/new" for ::1 at 2019-04-09 23:47:07 -0500
+Processing by AlmacensController#new as HTML
+  Rendering almacens/new.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (5.0ms)
+  Rendered almacens/new.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 203ms (Views: 161.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/new" for ::1 at 2019-04-09 23:47:13 -0500
+Processing by AlmacensController#new as HTML
+  Rendering almacens/new.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (13.0ms)
+  Rendered almacens/new.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 208ms (Views: 165.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/new" for ::1 at 2019-04-09 23:47:19 -0500
+Processing by AlmacensController#new as HTML
+  Rendering almacens/new.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (5.0ms)
+  Rendered almacens/new.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 214ms (Views: 165.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/new" for ::1 at 2019-04-09 23:47:28 -0500
+Processing by AlmacensController#new as HTML
+  Rendering almacens/new.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (5.0ms)
+  Rendered almacens/new.html.erb within layouts/application (39.8ms)
+Completed 200 OK in 179ms (Views: 141.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/new" for ::1 at 2019-04-09 23:48:42 -0500
+Processing by AlmacensController#new as HTML
+  Rendering almacens/new.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (2.0ms)
+  Rendered almacens/new.html.erb within layouts/application (43.0ms)
+Completed 500 Internal Server Error in 204ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/carlo/OneDrive/Documentos/Rails/Despacho-Arquitectos/despacho-arquitectos/app/views/almacens/_form.html.erb:58: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+...append=( form.submit, :class => "btn btn-info " );@output_bu...
+...                               ^):
+  
+app/views/almacens/_form.html.erb:58: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/views/almacens/new.html.erb:9:in `_app_views_almacens_new_html_erb__652375978_79274316'
+Started GET "/almacens/new" for ::1 at 2019-04-09 23:48:50 -0500
+Processing by AlmacensController#new as HTML
+  Rendering almacens/new.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (5.0ms)
+  Rendered almacens/new.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 278ms (Views: 225.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/new" for ::1 at 2019-04-09 23:50:21 -0500
+Processing by AlmacensController#new as HTML
+  Rendering almacens/new.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (5.0ms)
+  Rendered almacens/new.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 193ms (Views: 149.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/new" for ::1 at 2019-04-09 23:50:34 -0500
+Processing by AlmacensController#new as HTML
+  Rendering almacens/new.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (5.0ms)
+  Rendered almacens/new.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 222ms (Views: 172.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/new" for ::1 at 2019-04-09 23:50:47 -0500
+Processing by AlmacensController#new as HTML
+  Rendering almacens/new.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (8.0ms)
+  Rendered almacens/new.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 215ms (Views: 166.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/almacens" for ::1 at 2019-04-09 23:50:50 -0500
+Processing by AlmacensController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w0mHB7nKtMvSoWX8qCysfnwa+Brrz6dRDhYZgitZBaUS3xVv66wtchK0yO9OG3cG56GbrqpMYIs61TRmLqE1mQ==", "almacen"=>{"nombre"=>"Charlie", "descripcion"=>"234ereweded", "direccion"=>"por alla", "codigo_postal"=>"20199", "ciudad"=>"ags", "estado_almacen"=>"ags", "pais"=>"México"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[32mINSERT INTO "almacens" ("nombre", "descripcion", "direccion", "codigo_postal", "ciudad", "estado_almacen", "pais", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Charlie"], ["descripcion", "234ereweded"], ["direccion", "por alla"], ["codigo_postal", "20199"], ["ciudad", "ags"], ["estado_almacen", "ags"], ["pais", "México"], ["created_at", "2019-04-10 04:50:50.952806"], ["updated_at", "2019-04-10 04:50:50.952806"]]
+  [1m[35m (128.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/almacens/2
+Completed 302 Found in 143ms (ActiveRecord: 131.2ms)
+
+
+Started GET "/almacens/2" for ::1 at 2019-04-09 23:50:51 -0500
+Processing by AlmacensController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlmacen Load (0.0ms)[0m  [1m[34mSELECT  "almacens".* FROM "almacens" WHERE "almacens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering almacens/show.html.erb within layouts/application
+  Rendered almacens/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 158ms (Views: 111.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/2" for ::1 at 2019-04-09 23:51:53 -0500
+Processing by AlmacensController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlmacen Load (0.0ms)[0m  [1m[34mSELECT  "almacens".* FROM "almacens" WHERE "almacens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering almacens/show.html.erb within layouts/application
+  Rendered almacens/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 155ms (Views: 119.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/2" for ::1 at 2019-04-09 23:51:55 -0500
+Processing by AlmacensController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlmacen Load (0.0ms)[0m  [1m[34mSELECT  "almacens".* FROM "almacens" WHERE "almacens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering almacens/show.html.erb within layouts/application
+  Rendered almacens/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 192ms (Views: 138.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/2" for ::1 at 2019-04-09 23:52:09 -0500
+Processing by AlmacensController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlmacen Load (0.0ms)[0m  [1m[34mSELECT  "almacens".* FROM "almacens" WHERE "almacens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering almacens/show.html.erb within layouts/application
+  Rendered almacens/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 174ms (Views: 124.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/2" for ::1 at 2019-04-09 23:52:29 -0500
+Processing by AlmacensController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlmacen Load (1.0ms)[0m  [1m[34mSELECT  "almacens".* FROM "almacens" WHERE "almacens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering almacens/show.html.erb within layouts/application
+  Rendered almacens/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 155ms (Views: 105.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/almacens/2" for ::1 at 2019-04-09 23:52:53 -0500
+Processing by AlmacensController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlmacen Load (1.0ms)[0m  [1m[34mSELECT  "almacens".* FROM "almacens" WHERE "almacens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering almacens/show.html.erb within layouts/application
+  Rendered almacens/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 169ms (Views: 121.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/almacens/2" for ::1 at 2019-04-09 23:53:01 -0500
+Processing by AlmacensController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlmacen Load (0.0ms)[0m  [1m[34mSELECT  "almacens".* FROM "almacens" WHERE "almacens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering almacens/show.html.erb within layouts/application
+  Rendered almacens/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 155ms (Views: 107.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/2/edit" for ::1 at 2019-04-09 23:53:04 -0500
+Processing by AlmacensController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlmacen Load (1.0ms)[0m  [1m[34mSELECT  "almacens".* FROM "almacens" WHERE "almacens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering almacens/edit.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (5.0ms)
+  Rendered almacens/edit.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 226ms (Views: 167.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/almacens/2/edit" for ::1 at 2019-04-09 23:53:45 -0500
+Processing by AlmacensController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlmacen Load (0.0ms)[0m  [1m[34mSELECT  "almacens".* FROM "almacens" WHERE "almacens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering almacens/edit.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (5.0ms)
+  Rendered almacens/edit.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 201ms (Views: 159.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/2/edit" for ::1 at 2019-04-09 23:54:12 -0500
+Processing by AlmacensController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlmacen Load (0.0ms)[0m  [1m[34mSELECT  "almacens".* FROM "almacens" WHERE "almacens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering almacens/edit.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (5.0ms)
+  Rendered almacens/edit.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 213ms (Views: 169.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/2/edit" for ::1 at 2019-04-09 23:54:20 -0500
+Processing by AlmacensController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlmacen Load (0.0ms)[0m  [1m[34mSELECT  "almacens".* FROM "almacens" WHERE "almacens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering almacens/edit.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (6.0ms)
+  Rendered almacens/edit.html.erb within layouts/application (49.0ms)
+Completed 200 OK in 203ms (Views: 158.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/2/edit" for ::1 at 2019-04-09 23:54:29 -0500
+Processing by AlmacensController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlmacen Load (0.0ms)[0m  [1m[34mSELECT  "almacens".* FROM "almacens" WHERE "almacens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering almacens/edit.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (4.0ms)
+  Rendered almacens/edit.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 215ms (Views: 164.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/2/edit" for ::1 at 2019-04-09 23:54:51 -0500
+Processing by AlmacensController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlmacen Load (1.0ms)[0m  [1m[34mSELECT  "almacens".* FROM "almacens" WHERE "almacens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering almacens/edit.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (5.0ms)
+  Rendered almacens/edit.html.erb within layouts/application (54.0ms)
+Completed 200 OK in 212ms (Views: 168.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/almacens/2" for ::1 at 2019-04-09 23:54:53 -0500
+Processing by AlmacensController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlmacen Load (0.0ms)[0m  [1m[34mSELECT  "almacens".* FROM "almacens" WHERE "almacens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering almacens/show.html.erb within layouts/application
+  Rendered almacens/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 191ms (Views: 135.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/2" for ::1 at 2019-04-09 23:55:04 -0500
+Processing by AlmacensController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlmacen Load (0.0ms)[0m  [1m[34mSELECT  "almacens".* FROM "almacens" WHERE "almacens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering almacens/show.html.erb within layouts/application
+  Rendered almacens/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 183ms (Views: 137.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/2/edit" for ::1 at 2019-04-09 23:55:05 -0500
+Processing by AlmacensController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlmacen Load (1.0ms)[0m  [1m[34mSELECT  "almacens".* FROM "almacens" WHERE "almacens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering almacens/edit.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (6.0ms)
+  Rendered almacens/edit.html.erb within layouts/application (45.9ms)
+Completed 200 OK in 247ms (Views: 186.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/almacens/2" for ::1 at 2019-04-09 23:55:07 -0500
+Processing by AlmacensController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlmacen Load (0.0ms)[0m  [1m[34mSELECT  "almacens".* FROM "almacens" WHERE "almacens"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering almacens/show.html.erb within layouts/application
+  Rendered almacens/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 198ms (Views: 133.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens" for ::1 at 2019-04-09 23:55:08 -0500
+Processing by AlmacensController#index as HTML
+  Rendering almacens/index.html.erb within layouts/application
+  [1m[36mAlmacen Load (1.0ms)[0m  [1m[34mSELECT "almacens".* FROM "almacens"[0m
+  Rendered almacens/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 209ms (Views: 154.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/almacens/1" for ::1 at 2019-04-09 23:55:10 -0500
+Processing by AlmacensController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlmacen Load (0.0ms)[0m  [1m[34mSELECT  "almacens".* FROM "almacens" WHERE "almacens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering almacens/show.html.erb within layouts/application
+  Rendered almacens/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 180ms (Views: 129.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/1/edit" for ::1 at 2019-04-09 23:55:12 -0500
+Processing by AlmacensController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlmacen Load (1.0ms)[0m  [1m[34mSELECT  "almacens".* FROM "almacens" WHERE "almacens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering almacens/edit.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (5.0ms)
+  Rendered almacens/edit.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 243ms (Views: 184.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/almacens" for ::1 at 2019-04-09 23:55:16 -0500
+Processing by AlmacensController#index as HTML
+  Rendering almacens/index.html.erb within layouts/application
+  [1m[36mAlmacen Load (1.0ms)[0m  [1m[34mSELECT "almacens".* FROM "almacens"[0m
+  Rendered almacens/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 185ms (Views: 132.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/almacens/new" for ::1 at 2019-04-09 23:55:18 -0500
+Processing by AlmacensController#new as HTML
+  Rendering almacens/new.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (4.0ms)
+  Rendered almacens/new.html.erb within layouts/application (40.1ms)
+Completed 200 OK in 239ms (Views: 183.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens/new" for ::1 at 2019-04-09 23:55:28 -0500
+Processing by AlmacensController#new as HTML
+  Rendering almacens/new.html.erb within layouts/application
+  Rendered almacens/_form.html.erb (5.0ms)
+  Rendered almacens/new.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 195ms (Views: 151.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profesional" for ::1 at 2019-04-09 23:56:48 -0500
+Processing by ProfesionalController#index as HTML
+  Rendering profesional/index.html.erb within layouts/etc
+  Rendered profesional/index.html.erb within layouts/etc (1.0ms)
+Completed 200 OK in 308ms (Views: 102.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-09 23:56:52 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (5.0ms)
+Completed 200 OK in 156ms (Views: 95.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver?utf8=%E2%9C%93&nombre=Charlie&apellido=Carreon&profesion=&ciudad=ags" for ::1 at 2019-04-09 23:57:01 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Parameters: {"utf8"=>"✓", "nombre"=>"Charlie", "apellido"=>"Carreon", "profesion"=>"", "ciudad"=>"ags"}
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros" WHERE (LOWER(direccion) like '%' || LOWER('ags') || '%' ) AND (LOWER(nombre) like '%' || LOWER('Charlie') || '%' ) AND (LOWER(nombre) like '%' || LOWER('Carreon') || '%' )[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (5.0ms)
+Completed 200 OK in 120ms (Views: 80.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/editar_terceros.2" for ::1 at 2019-04-09 23:57:06 -0500
+Processing by ProfesionalController#editar as 
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profesional/editar.html.erb within layouts/etc
+  Rendered profesional/editar.html.erb within layouts/etc (2.0ms)
+Completed 200 OK in 868ms (Views: 416.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-10 08:08:44 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (66.0ms)
+Completed 200 OK in 314ms (Views: 212.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-04-10 08:08:48 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+>>>>>>> 9c043b955c127c4b3d47658b2fe741cddf64f73e
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
@@ -4635,6 +5806,7 @@ puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/favicon.ico" for ::1 at 2019-04-10 08:30:36 -0500
   [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   
@@ -4653,6 +5825,46 @@ activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
 actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
 actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+=======
+Started GET "/editar_terceros.2" for ::1 at 2019-04-10 08:17:12 -0500
+Processing by ProfesionalController#editar as 
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profesional/editar.html.erb within layouts/etc
+  Rendered profesional/editar.html.erb within layouts/etc (2.0ms)
+Completed 200 OK in 939ms (Views: 423.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/almacens" for ::1 at 2019-04-10 08:17:23 -0500
+Processing by AlmacensController#index as HTML
+  Rendering almacens/index.html.erb within layouts/application
+  [1m[36mAlmacen Load (0.0ms)[0m  [1m[34mSELECT "almacens".* FROM "almacens"[0m
+  Rendered almacens/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 180ms (Views: 123.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/almacens" for ::1 at 2019-04-10 08:17:34 -0500
+Processing by AlmacensController#index as HTML
+  Rendering almacens/index.html.erb within layouts/application
+  [1m[36mAlmacen Load (1.0ms)[0m  [1m[34mSELECT "almacens".* FROM "almacens"[0m
+  Rendered almacens/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 137ms (Views: 101.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-10 08:23:54 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (32.0ms)
+Completed 200 OK in 163ms (Views: 107.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-04-10 08:23:55 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+>>>>>>> 9c043b955c127c4b3d47658b2fe741cddf64f73e
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
@@ -4679,6 +5891,7 @@ puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
   [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Migrating to CreatePruebas (20190330062706)
   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
@@ -4686,14 +5899,132 @@ Migrating to CreatePruebas (20190330062706)
   [1m[35m (26.7ms)[0m  [1m[35mCREATE TABLE "pruebas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "precio" integer, "categoria" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
   [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190330062706"]]
   [1m[35m (90.7ms)[0m  [1m[36mcommit transaction[0m
+=======
+Started GET "/profesional" for ::1 at 2019-04-10 08:27:18 -0500
+Processing by ProfesionalController#index as HTML
+  Rendering profesional/index.html.erb within layouts/etc
+  Rendered profesional/index.html.erb within layouts/etc (0.0ms)
+Completed 200 OK in 154ms (Views: 83.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColumnProfesionistaToTerceros (20190410132838)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (15.6ms)[0m  [1m[35mALTER TABLE "terceros" ADD "profesionista" boolean[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190410132838"]]
+  [1m[35m (15.6ms)[0m  [1m[36mcommit transaction[0m
+>>>>>>> 9c043b955c127c4b3d47658b2fe741cddf64f73e
   [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
   [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+<<<<<<< HEAD
 Started GET "/services" for ::1 at 2019-04-10 08:32:18 -0500
   [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   
 ActionController::RoutingError (No route matches [GET] "/services"):
+=======
+Started GET "/profesional" for ::1 at 2019-04-10 08:29:56 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProfesionalController#index as HTML
+  Rendering profesional/index.html.erb within layouts/etc
+  Rendered profesional/index.html.erb within layouts/etc (3.0ms)
+Completed 200 OK in 132ms (Views: 74.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/new_p" for ::1 at 2019-04-10 08:30:23 -0500
+Processing by ProfesionalController#nuevo as HTML
+  Parameters: {"nombre"=>"Charlie", "apellidos"=>"Carreon", "direccion"=>"Esfuerzo nacional 916", "codigo_postal"=>"20199", "ciudad"=>"ags", "estado"=>"ags", "pais"=>"México", "telefono"=>"4491044321", "correo"=>"carlos@marketful.mx", "pagina"=>"www.hola.com", "rfc"=>"CARC76044", "forma_j"=>"EDFFEED45", "estado_tercero"=>"Inactivo", "carrera"=>"", "cedula"=>"", "profesioness"=>"Carrera en Ing. Sistemas con la cedula 12345432\r\nCarrera en psicologia con la cedula 1234567\r\n", "especialidad"=>"", "experiencia"=>"", "especialidades"=>"123456 anhos de experiencia en 1234567\r\n1234 anhos de experiencia en 123456\r\n", "nivel"=>"n1"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "terceros" ("nombre", "direccion", "codigo_postal", "ciudad", "estado_provincia", "pais", "email", "sitio_web", "telefono", "rfc", "forma_juridica", "estado_tercero", "created_at", "updated_at", "profesionista") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Charlie Carreon"], ["direccion", "México ags ags Esfuerzo nacional 916 CP 20199"], ["codigo_postal", "20199"], ["ciudad", "ags"], ["estado_provincia", "ags"], ["pais", "México"], ["email", "carlos@marketful.mx"], ["sitio_web", "www.hola.com"], ["telefono", "4491044321"], ["rfc", "CARC76044"], ["forma_juridica", "EDFFEED45"], ["estado_tercero", "Inactivo"], ["created_at", "2019-04-10 13:30:24.070097"], ["updated_at", "2019-04-10 13:30:24.070097"], ["profesionista", "t"]]
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "profesions" ("terceros_idterceros", "nombre_profesion", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["terceros_idterceros", 4], ["nombre_profesion", "Carrera en Ing. Sistemas con la cedula 12345432"], ["created_at", "2019-04-10 13:30:24.113099"], ["updated_at", "2019-04-10 13:30:24.113099"]]
+  [1m[35m (35.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "profesions" ("terceros_idterceros", "nombre_profesion", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["terceros_idterceros", 4], ["nombre_profesion", "Carrera en psicologia con la cedula 1234567"], ["created_at", "2019-04-10 13:30:24.156912"], ["updated_at", "2019-04-10 13:30:24.156912"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "especialidads" ("terceros_idterceros", "nombre_especialidad", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["terceros_idterceros", 4], ["nombre_especialidad", "123456 anhos de experiencia en 1234567"], ["created_at", "2019-04-10 13:30:24.188914"], ["updated_at", "2019-04-10 13:30:24.188914"]]
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "especialidads" ("terceros_idterceros", "nombre_especialidad", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["terceros_idterceros", 4], ["nombre_especialidad", "1234 anhos de experiencia en 123456"], ["created_at", "2019-04-10 13:30:24.205915"], ["updated_at", "2019-04-10 13:30:24.205915"]]
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (12.8ms)[0m  [1m[33mUPDATE "terceros" SET "updated_at" = ?, "profesiones" = ?, "especialidades" = ? WHERE "terceros"."id" = ?[0m  [["updated_at", "2019-04-10 13:30:24.220917"], ["profesiones", "Carrera en Ing. Sistemas con la cedula 12345432\r\nCarrera en psicologia con la cedula 1234567\r\n"], ["especialidades", "123456 anhos de experiencia en 1234567\r\n1234 anhos de experiencia en 123456\r\n"], ["id", 4]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/profesional?status=0
+Completed 302 Found in 235ms (ActiveRecord: 96.6ms)
+
+
+Started GET "/profesional?status=0" for ::1 at 2019-04-10 08:30:24 -0500
+Processing by ProfesionalController#index as HTML
+  Parameters: {"status"=>"0"}
+  Rendering profesional/index.html.erb within layouts/etc
+  Rendered profesional/index.html.erb within layouts/etc (9.0ms)
+Completed 200 OK in 111ms (Views: 73.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-10 08:30:28 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (10.0ms)
+Completed 200 OK in 159ms (Views: 105.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eliminar_terceros.3" for ::1 at 2019-04-10 08:30:36 -0500
+Processing by ProfesionalController#eliminar as 
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "terceros" WHERE "terceros"."id" = ?[0m  [["id", 3]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/ver
+Completed 302 Found in 27ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-10 08:30:36 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (7.0ms)
+Completed 200 OK in 134ms (Views: 88.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/editar_terceros.4" for ::1 at 2019-04-10 08:30:39 -0500
+Processing by ProfesionalController#editar as 
+  [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering profesional/editar.html.erb within layouts/etc
+  Rendered profesional/editar.html.erb within layouts/etc (3.0ms)
+Completed 200 OK in 925ms (Views: 468.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/editar_terceros.4" for ::1 at 2019-04-10 08:31:31 -0500
+Processing by ProfesionalController#editar as 
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering profesional/editar.html.erb within layouts/etc
+  Rendered profesional/editar.html.erb within layouts/etc (2.0ms)
+Completed 200 OK in 1030ms (Views: 514.4ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/ver" for ::1 at 2019-04-10 08:40:59 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (92.0ms)
+Completed 200 OK in 364ms (Views: 233.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-04-10 08:41:11 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+>>>>>>> 9c043b955c127c4b3d47658b2fe741cddf64f73e
   
 actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -4722,9 +6053,16 @@ puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/services" for ::1 at 2019-04-10 08:32:28 -0500
   
 ActionController::RoutingError (No route matches [GET] "/services"):
+=======
+Started GET "/provedores" for 127.0.0.1 at 2019-04-10 08:45:58 -0500
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/provedores"):
+>>>>>>> 9c043b955c127c4b3d47658b2fe741cddf64f73e
   
 actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -4753,11 +6091,101 @@ puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/favicon.ico" for ::1 at 2019-04-10 08:32:40 -0500
   
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   
 actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+=======
+Started GET "/provedores/provedores" for 127.0.0.1 at 2019-04-10 08:46:30 -0500
+Processing by ProvedoresController#provedores as HTML
+  Rendering provedores/provedores.html.erb within layouts/application
+  Rendered provedores/provedores.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 297ms (Views: 221.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/provedores/provedores" for ::1 at 2019-04-10 08:47:10 -0500
+Processing by ProvedoresController#provedores as HTML
+  Rendering provedores/provedores.html.erb within layouts/application
+  Rendered provedores/provedores.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 334ms (Views: 228.9ms)
+
+
+Started GET "/provedores/provedores" for ::1 at 2019-04-10 08:47:59 -0500
+Processing by ProvedoresController#provedores as HTML
+  Rendering provedores/provedores.html.erb within layouts/application
+  Rendered provedores/provedores.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 356ms (Views: 230.7ms)
+
+
+Started GET "/provedores/provedores" for ::1 at 2019-04-10 08:48:23 -0500
+Processing by ProvedoresController#provedores as HTML
+  Rendering provedores/provedores.html.erb within layouts/application
+  Rendered provedores/provedores.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 368ms (Views: 231.4ms)
+
+
+Started GET "/provedores/provedores" for ::1 at 2019-04-10 08:52:47 -0500
+Processing by ProvedoresController#provedores as HTML
+  Rendering provedores/provedores.html.erb within layouts/application
+  Rendered provedores/provedores.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 268ms (Views: 194.1ms)
+
+
+Started GET "/provedores/mostrarprovedores" for ::1 at 2019-04-10 08:55:35 -0500
+Processing by ProvedoresController#mostrar as HTML
+Completed 406 Not Acceptable in 3520ms
+
+
+  
+ActionController::UnknownFormat (ProvedoresController#mostrar is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.7) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+>>>>>>> 9c043b955c127c4b3d47658b2fe741cddf64f73e
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
@@ -4784,6 +6212,7 @@ puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/services" for ::1 at 2019-04-10 08:36:51 -0500
   [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   
@@ -4802,6 +6231,46 @@ activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
 actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
 actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+=======
+Started GET "/provedores/mostrar" for ::1 at 2019-04-10 08:57:04 -0500
+Processing by ProvedoresController#mostrar as HTML
+  Rendering provedores/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered provedores/mostrar.html.erb within layouts/application (120.0ms)
+Completed 200 OK in 468ms (Views: 351.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/provedores/editar" for ::1 at 2019-04-10 08:59:11 -0500
+Processing by ProvedoresController#editar as HTML
+  [1m[36mTercero Load (4.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 72ms (ActiveRecord: 8.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Tercero with 'id'=):
+  
+app/controllers/provedores_controller.rb:62:in `editar'
+Started GET "/provedores/provedores" for ::1 at 2019-04-10 08:59:53 -0500
+Processing by ProvedoresController#provedores as HTML
+  Rendering provedores/provedores.html.erb within layouts/application
+  Rendered provedores/provedores.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 352ms (Views: 243.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/provedores/mostrar" for ::1 at 2019-04-10 09:00:06 -0500
+Processing by ProvedoresController#mostrar as HTML
+  Rendering provedores/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (4.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered provedores/mostrar.html.erb within layouts/application (92.0ms)
+Completed 200 OK in 420ms (Views: 311.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/provedores/mostrar" for ::1 at 2019-04-10 09:03:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/provedores/mostrar"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+>>>>>>> 9c043b955c127c4b3d47658b2fe741cddf64f73e
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
@@ -4828,6 +6297,7 @@ puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
   [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Migrating to CreateServices (20190410133446)
   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
@@ -5530,3 +7000,593 @@ Processing by ServicesController#index as HTML
 Completed 200 OK in 119ms (Views: 87.0ms | ActiveRecord: 1.0ms)
 
 
+=======
+Started GET "/provedores_mostrar" for ::1 at 2019-04-10 09:03:30 -0500
+Processing by ProvedoresController#mostrar as HTML
+  Rendering provedores/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered provedores/mostrar.html.erb within layouts/application (124.0ms)
+Completed 200 OK in 600ms (Views: 437.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/provedores_mostrar" for ::1 at 2019-04-10 09:04:09 -0500
+Processing by ProvedoresController#mostrar as HTML
+  Rendering provedores/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered provedores/mostrar.html.erb within layouts/application (96.1ms)
+Completed 200 OK in 476ms (Views: 337.8ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/eliminar_terceros.4" for ::1 at 2019-04-10 09:04:15 -0500
+Processing by ProfesionalController#eliminar as 
+  [1m[36mTercero Load (4.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  [1m[31mDELETE FROM "terceros" WHERE "terceros"."id" = ?[0m  [["id", 4]]
+  [1m[35m (132.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/ver
+Completed 302 Found in 156ms (ActiveRecord: 140.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-10 09:04:15 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (8.0ms)
+Completed 200 OK in 264ms (Views: 158.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/editar_terceros.2" for ::1 at 2019-04-10 09:06:05 -0500
+Processing by ProfesionalController#editar as 
+  [1m[36mTercero Load (4.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profesional/editar.html.erb within layouts/etc
+  Rendered profesional/editar.html.erb within layouts/etc (4.0ms)
+Completed 200 OK in 1972ms (Views: 972.7ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/provedores_mostrar" for ::1 at 2019-04-10 09:06:39 -0500
+Processing by ProvedoresController#mostrar as HTML
+  Rendering provedores/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (4.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered provedores/mostrar.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 312ms (Views: 233.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/provedores_editar.2" for ::1 at 2019-04-10 09:06:45 -0500
+Processing by ProvedoresController#editar as 
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering provedores/editar.html.erb within layouts/application
+  Rendered provedores/editar.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 1865ms (Views: 988.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-10 09:07:31 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (4.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (8.0ms)
+Completed 200 OK in 204ms (Views: 134.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/provedores_mostrar" for ::1 at 2019-04-10 09:07:45 -0500
+Processing by ProvedoresController#mostrar as HTML
+  Rendering provedores/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (4.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered provedores/mostrar.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 308ms (Views: 225.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/provedores_mostrar" for ::1 at 2019-04-10 09:08:31 -0500
+Processing by ProvedoresController#mostrar as HTML
+  Rendering provedores/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (4.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered provedores/mostrar.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 332ms (Views: 250.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/provedores_editar.2" for ::1 at 2019-04-10 09:08:32 -0500
+Processing by ProvedoresController#editar as 
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering provedores/editar.html.erb within layouts/application
+  Rendered provedores/editar.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 1989ms (Views: 1007.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/provedores_editar.2" for ::1 at 2019-04-10 09:08:50 -0500
+Processing by ProvedoresController#editar as 
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering provedores/editar.html.erb within layouts/application
+  Rendered provedores/editar.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 1916ms (Views: 1014.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/provedores_editar.2" for ::1 at 2019-04-10 09:09:01 -0500
+Processing by ProvedoresController#editar as 
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering provedores/editar.html.erb within layouts/application
+  Rendered provedores/editar.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 2024ms (Views: 1042.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/provedores_mostrar" for ::1 at 2019-04-10 09:09:39 -0500
+Processing by ProvedoresController#mostrar as HTML
+  Rendering provedores/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (4.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered provedores/mostrar.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 320ms (Views: 235.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/provedores_editar.2" for ::1 at 2019-04-10 09:09:41 -0500
+Processing by ProvedoresController#editar as 
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering provedores/editar.html.erb within layouts/application
+  Rendered provedores/editar.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 1953ms (Views: 996.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/provedores_editar.2" for ::1 at 2019-04-10 09:18:10 -0500
+Processing by ProvedoresController#editar as 
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering provedores/editar.html.erb within layouts/application
+  Rendered provedores/editar.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 2020ms (Views: 1048.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/provedores_editar.2" for ::1 at 2019-04-10 09:18:54 -0500
+Processing by ProvedoresController#editar as 
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering provedores/editar.html.erb within layouts/application
+  Rendered provedores/editar.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 2017ms (Views: 1043.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profesional?status=1" for ::1 at 2019-04-10 09:20:35 -0500
+Processing by ProfesionalController#index as HTML
+  Parameters: {"status"=>"1"}
+  Rendering profesional/index.html.erb within layouts/etc
+  Rendered profesional/index.html.erb within layouts/etc (4.0ms)
+Completed 200 OK in 252ms (Views: 153.1ms)
+
+
+Started GET "/provedores_editar.2" for ::1 at 2019-04-10 09:21:13 -0500
+Processing by ProvedoresController#editar as 
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering provedores/editar.html.erb within layouts/application
+  Rendered provedores/editar.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 2168ms (Views: 1057.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/provedores_provedores?status=1" for ::1 at 2019-04-10 09:21:16 -0500
+Processing by ProvedoresController#provedores as HTML
+  Parameters: {"status"=>"1"}
+  Rendering provedores/provedores.html.erb within layouts/application
+  Rendered provedores/provedores.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 300ms (Views: 222.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profesional?status=1" for ::1 at 2019-04-10 09:21:25 -0500
+Processing by ProfesionalController#index as HTML
+  Parameters: {"status"=>"1"}
+  Rendering profesional/index.html.erb within layouts/etc
+  Rendered profesional/index.html.erb within layouts/etc (4.0ms)
+Completed 200 OK in 220ms (Views: 142.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/provedores_provedores?status=1" for ::1 at 2019-04-10 09:21:45 -0500
+Processing by ProvedoresController#provedores as HTML
+  Parameters: {"status"=>"1"}
+  Rendering provedores/provedores.html.erb within layouts/application
+  Rendered provedores/provedores.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 352ms (Views: 227.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/provedores_provedores?status=1" for ::1 at 2019-04-10 09:21:49 -0500
+Processing by ProvedoresController#provedores as HTML
+  Parameters: {"status"=>"1"}
+  Rendering provedores/provedores.html.erb within layouts/application
+  Rendered provedores/provedores.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 300ms (Views: 221.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/new_p" for ::1 at 2019-04-10 09:22:35 -0500
+Processing by ProfesionalController#nuevo as HTML
+  Parameters: {"nombre"=>"Neto", "apellidos"=>"Contreras", "direccion"=>"12344", "codigo_postal"=>"123", "ciudad"=>"ags", "estado"=>"asg", "pais"=>"mex", "telefono"=>"1233213", "correo"=>"jdjd@alumnos.upa", "pagina"=>"1233", "rfc"=>"123123123", "forma_j"=>"123123123", "estado_tercero"=>"Activo", "nivel"=>"n1"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "terceros" ("nombre", "direccion", "codigo_postal", "ciudad", "estado_provincia", "pais", "email", "sitio_web", "telefono", "rfc", "forma_juridica", "estado_tercero", "created_at", "updated_at", "profesionista") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "Neto Contreras"], ["direccion", "mex ags asg 12344 CP 123"], ["codigo_postal", "123"], ["ciudad", "ags"], ["estado_provincia", "asg"], ["pais", "mex"], ["email", "jdjd@alumnos.upa"], ["sitio_web", "1233"], ["telefono", "1233213"], ["rfc", "123123123"], ["forma_juridica", "123123123"], ["estado_tercero", "Activo"], ["created_at", "2019-04-10 14:22:35.127914"], ["updated_at", "2019-04-10 14:22:35.127914"], ["profesionista", "t"]]
+  [1m[35m (136.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 156ms (ActiveRecord: 136.0ms)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/profesional_controller.rb:27:in `nuevo'
+Started GET "/provedores/provedores" for ::1 at 2019-04-10 09:23:53 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/provedores/provedores"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/provedores_provedores" for ::1 at 2019-04-10 09:24:23 -0500
+Processing by ProvedoresController#provedores as HTML
+  Rendering provedores/provedores.html.erb within layouts/application
+  Rendered provedores/provedores.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 384ms (Views: 222.3ms)
+
+
+Started POST "/new_provedor" for ::1 at 2019-04-10 09:24:48 -0500
+Processing by ProvedoresController#nuevo as HTML
+  Parameters: {"nombre"=>"er", "apellidos"=>"erer", "direccion"=>"ererer", "codigo_postal"=>"erererer", "ciudad"=>"rererer", "estado"=>"ererere", "pais"=>"rerererer", "telefono"=>"erererer", "correo"=>"erne@alumnos.upa", "pagina"=>"2243424", "rfc"=>"23424324", "forma_j"=>"23434234", "estado_tercero"=>"Activo", "nivel"=>"n1"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 8ms
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.7) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.7) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.7) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.7) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.7) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.7) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.7) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/provedores_provedores" for ::1 at 2019-04-10 09:26:02 -0500
+Processing by ProvedoresController#provedores as HTML
+  Rendering provedores/provedores.html.erb within layouts/application
+  Rendered provedores/provedores.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 392ms (Views: 274.4ms)
+
+
+Started POST "/new_provedor" for ::1 at 2019-04-10 09:26:30 -0500
+Processing by ProvedoresController#nuevo as HTML
+  Parameters: {"nombre"=>"er", "apellidos"=>"ere", "direccion"=>"ererer", "codigo_postal"=>"erer", "ciudad"=>"rerer", "estado"=>"eerer", "pais"=>"erere", "telefono"=>"erere", "correo"=>"errer@alumonos.upa", "pagina"=>"235525", "rfc"=>"35trtetr", "forma_j"=>"23525325", "estado_tercero"=>"Activo", "nivel"=>"n1"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  [1m[32mINSERT INTO "terceros" ("nombre", "direccion", "codigo_postal", "ciudad", "estado_provincia", "pais", "email", "sitio_web", "telefono", "rfc", "forma_juridica", "estado_tercero", "created_at", "updated_at", "profesionista") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "er ere"], ["direccion", "erere rerer eerer ererer CP erer"], ["codigo_postal", "erer"], ["ciudad", "rerer"], ["estado_provincia", "eerer"], ["pais", "erere"], ["email", "errer@alumonos.upa"], ["sitio_web", "235525"], ["telefono", "erere"], ["rfc", "35trtetr"], ["forma_juridica", "23525325"], ["estado_tercero", "Activo"], ["created_at", "2019-04-10 14:26:31.025551"], ["updated_at", "2019-04-10 14:26:31.025551"], ["profesionista", "t"]]
+  [1m[35m (120.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 256ms (ActiveRecord: 128.0ms)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/provedores_controller.rb:24:in `nuevo'
+Started GET "/provedores_provedores" for ::1 at 2019-04-10 09:27:53 -0500
+Processing by ProvedoresController#provedores as HTML
+  Rendering provedores/provedores.html.erb within layouts/application
+  Rendered provedores/provedores.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 340ms (Views: 227.1ms)
+
+
+Started GET "/provedores_provedores" for ::1 at 2019-04-10 09:29:24 -0500
+Processing by ProvedoresController#provedores as HTML
+  Rendering provedores/provedores.html.erb within layouts/application
+  Rendered provedores/provedores.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 356ms (Views: 242.7ms)
+
+
+Started POST "/new_provedor" for ::1 at 2019-04-10 09:29:50 -0500
+Processing by ProvedoresController#nuevo as HTML
+  Parameters: {"nombre"=>"ert", "apellidos"=>"erer", "direccion"=>"erere", "codigo_postal"=>"erer", "ciudad"=>"ererer", "estado"=>"erere", "pais"=>"erere", "telefono"=>"ererer", "correo"=>"netos@alumnos.upa", "pagina"=>"13133", "rfc"=>"1313", "forma_j"=>"131313", "estado_tercero"=>"Activo", "nivel"=>"n1"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "terceros" ("nombre", "proveedor", "direccion", "codigo_postal", "ciudad", "estado_provincia", "pais", "email", "sitio_web", "telefono", "rfc", "forma_juridica", "estado_tercero", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "ert erer"], ["proveedor", "t"], ["direccion", "erere ererer erere erere CP erer"], ["codigo_postal", "erer"], ["ciudad", "ererer"], ["estado_provincia", "erere"], ["pais", "erere"], ["email", "netos@alumnos.upa"], ["sitio_web", "13133"], ["telefono", "ererer"], ["rfc", "1313"], ["forma_juridica", "131313"], ["estado_tercero", "Activo"], ["created_at", "2019-04-10 14:29:50.341936"], ["updated_at", "2019-04-10 14:29:50.341936"]]
+  [1m[35m (120.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/profesional?status=0
+Completed 302 Found in 268ms (ActiveRecord: 124.0ms)
+
+
+Started GET "/profesional?status=0" for ::1 at 2019-04-10 09:29:50 -0500
+Processing by ProfesionalController#index as HTML
+  Parameters: {"status"=>"0"}
+  Rendering profesional/index.html.erb within layouts/etc
+  Rendered profesional/index.html.erb within layouts/etc (0.0ms)
+Completed 200 OK in 280ms (Views: 149.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profesional?status=0" for ::1 at 2019-04-10 09:31:09 -0500
+Processing by ProfesionalController#index as HTML
+  Parameters: {"status"=>"0"}
+  Rendering profesional/index.html.erb within layouts/etc
+  Rendered profesional/index.html.erb within layouts/etc (4.0ms)
+Completed 200 OK in 269ms (Views: 157.7ms)
+
+
+Started POST "/new_provedor" for ::1 at 2019-04-10 09:31:15 -0500
+Processing by ProvedoresController#nuevo as HTML
+  Parameters: {"nombre"=>"ert", "apellidos"=>"erer", "direccion"=>"erere", "codigo_postal"=>"erer", "ciudad"=>"ererer", "estado"=>"erere", "pais"=>"erere", "telefono"=>"ererer", "correo"=>"netos@alumnos.upa", "pagina"=>"13133", "rfc"=>"1313", "forma_j"=>"131313", "estado_tercero"=>"Activo", "nivel"=>"n1"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  [1m[32mINSERT INTO "terceros" ("nombre", "proveedor", "direccion", "codigo_postal", "ciudad", "estado_provincia", "pais", "email", "sitio_web", "telefono", "rfc", "forma_juridica", "estado_tercero", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "ert erer"], ["proveedor", "t"], ["direccion", "erere ererer erere erere CP erer"], ["codigo_postal", "erer"], ["ciudad", "ererer"], ["estado_provincia", "erere"], ["pais", "erere"], ["email", "netos@alumnos.upa"], ["sitio_web", "13133"], ["telefono", "ererer"], ["rfc", "1313"], ["forma_juridica", "131313"], ["estado_tercero", "Activo"], ["created_at", "2019-04-10 14:31:15.343480"], ["updated_at", "2019-04-10 14:31:15.343480"]]
+  [1m[35m (168.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/provedores_provedores?status=0
+Completed 302 Found in 288ms (ActiveRecord: 176.0ms)
+
+
+Started GET "/provedores_provedores?status=0" for ::1 at 2019-04-10 09:31:15 -0500
+Processing by ProvedoresController#provedores as HTML
+  Parameters: {"status"=>"0"}
+  Rendering provedores/provedores.html.erb within layouts/application
+  Rendered provedores/provedores.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 316ms (Views: 226.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/provedores_mostrar" for ::1 at 2019-04-10 09:31:31 -0500
+Processing by ProvedoresController#mostrar as HTML
+  Rendering provedores/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (4.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered provedores/mostrar.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 328ms (Views: 229.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/eliminar_terceros.7" for ::1 at 2019-04-10 09:31:35 -0500
+Processing by ProfesionalController#eliminar as 
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  [1m[31mDELETE FROM "terceros" WHERE "terceros"."id" = ?[0m  [["id", 7]]
+  [1m[35m (104.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/ver
+Completed 302 Found in 128ms (ActiveRecord: 108.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-10 09:31:35 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (16.0ms)
+Completed 200 OK in 256ms (Views: 163.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eliminar_terceros.8" for ::1 at 2019-04-10 09:31:37 -0500
+Processing by ProfesionalController#eliminar as 
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  [1m[31mDELETE FROM "terceros" WHERE "terceros"."id" = ?[0m  [["id", 8]]
+  [1m[35m (108.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/ver
+Completed 302 Found in 120ms (ActiveRecord: 112.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-10 09:31:37 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (12.0ms)
+Completed 200 OK in 256ms (Views: 162.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eliminar_terceros.6" for ::1 at 2019-04-10 09:31:39 -0500
+Processing by ProfesionalController#eliminar as 
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "terceros" WHERE "terceros"."id" = ?[0m  [["id", 6]]
+  [1m[35m (104.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/ver
+Completed 302 Found in 116ms (ActiveRecord: 104.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-10 09:31:39 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (8.0ms)
+Completed 200 OK in 244ms (Views: 153.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/editar_terceros.5" for ::1 at 2019-04-10 09:31:55 -0500
+Processing by ProfesionalController#editar as 
+  [1m[36mTercero Load (4.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering profesional/editar.html.erb within layouts/etc
+  Rendered profesional/editar.html.erb within layouts/etc (4.0ms)
+Completed 200 OK in 1866ms (Views: 931.3ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/provedores_mostrar" for ::1 at 2019-04-10 09:32:54 -0500
+Processing by ProvedoresController#mostrar as HTML
+  Rendering provedores/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (4.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered provedores/mostrar.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 328ms (Views: 230.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/provedores_editar.5" for ::1 at 2019-04-10 09:32:57 -0500
+Processing by ProvedoresController#editar as 
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering provedores/editar.html.erb within layouts/application
+  Rendered provedores/editar.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 1957ms (Views: 1020.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/editar_provedor" for ::1 at 2019-04-10 09:33:06 -0500
+Processing by ProvedoresController#editar_p as HTML
+  Parameters: {"nombre"=>"Neto Contreras", "apellidos"=>"", "id_tercero"=>"5", "direccion"=>"mex ags asg 12344 CP 123", "codigo_postal"=>"123", "ciudad"=>"ags", "estado"=>"asg", "pais"=>"mex", "telefono"=>"1233213", "correo"=>"jdjd@alumnos.upa", "pagina"=>"kyfgfd", "rfc"=>"123123123", "forma_j"=>"123123123", "estado_tercero"=>"Activo", "nivel"=>"n1"}
+  [1m[36mTercero Load (4.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  [1m[33mUPDATE "terceros" SET "nombre" = ?, "proveedor" = ?, "direccion" = ?, "sitio_web" = ?, "updated_at" = ? WHERE "terceros"."id" = ?[0m  [["nombre", "Neto Contreras "], ["proveedor", "t"], ["direccion", "mex ags asg mex ags asg 12344 CP 123 CP 123"], ["sitio_web", "kyfgfd"], ["updated_at", "2019-04-10 14:33:07.048040"], ["id", 5]]
+  [1m[35m (108.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/provedores_provedores?status=2
+Completed 302 Found in 148ms (ActiveRecord: 116.0ms)
+
+
+Started GET "/provedores_provedores?status=2" for ::1 at 2019-04-10 09:33:07 -0500
+Processing by ProvedoresController#provedores as HTML
+  Parameters: {"status"=>"2"}
+  Rendering provedores/provedores.html.erb within layouts/application
+  Rendered provedores/provedores.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 316ms (Views: 215.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/provedores_provedores" for ::1 at 2019-04-10 09:33:16 -0500
+Processing by ProvedoresController#provedores as HTML
+  Rendering provedores/provedores.html.erb within layouts/application
+  Rendered provedores/provedores.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 304ms (Views: 223.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/provedores_mostrar" for ::1 at 2019-04-10 09:33:24 -0500
+Processing by ProvedoresController#mostrar as HTML
+  Rendering provedores/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered provedores/mostrar.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 336ms (Views: 239.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/provedores_mostrar?utf8=%E2%9C%93&nombre=&apellido=&profesion=sistemas&ciudad=" for ::1 at 2019-04-10 09:33:38 -0500
+Processing by ProvedoresController#mostrar as HTML
+  Parameters: {"utf8"=>"✓", "nombre"=>"", "apellido"=>"", "profesion"=>"sistemas", "ciudad"=>""}
+  Rendering provedores/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (4.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros" WHERE (LOWER(profesiones) like '%' || LOWER('sistemas') || '%' )[0m
+  Rendered provedores/mostrar.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 332ms (Views: 239.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/provedores_mostrar?utf8=%E2%9C%93&nombre=&apellido=&profesion=&ciudad=" for ::1 at 2019-04-10 09:33:41 -0500
+Processing by ProvedoresController#mostrar as HTML
+  Parameters: {"utf8"=>"✓", "nombre"=>"", "apellido"=>"", "profesion"=>"", "ciudad"=>""}
+  Rendering provedores/mostrar.html.erb within layouts/application
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered provedores/mostrar.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 340ms (Views: 238.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eliminar_terceros.2" for ::1 at 2019-04-10 09:33:43 -0500
+Processing by ProfesionalController#eliminar as 
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "terceros" WHERE "terceros"."id" = ?[0m  [["id", 2]]
+  [1m[35m (104.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/ver
+Completed 302 Found in 124ms (ActiveRecord: 104.0ms)
+
+
+Started GET "/ver" for ::1 at 2019-04-10 09:33:43 -0500
+Processing by ProfesionalController#mostrar as HTML
+  Rendering profesional/mostrar.html.erb within layouts/etc
+  [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
+  Rendered profesional/mostrar.html.erb within layouts/etc (16.0ms)
+Completed 200 OK in 252ms (Views: 166.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-09 21:05:35 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 199ms (Views: 160.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-04-09 21:05:48 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+>>>>>>> 9c043b955c127c4b3d47658b2fe741cddf64f73e

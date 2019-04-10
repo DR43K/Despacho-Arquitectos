@@ -6,10 +6,19 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 
-<div class="container">
+<div class="container" style="background-color: white;">
 	<h1>Editar Almacen</h1>
 	<%= render 'form', almacen: @almacen %>
-	<%= link_to 'Show', @almacen %> |
-	<%= link_to 'Back', almacens_path %>
+	<br>
+	<br>
+	<%= link_to 'Ver', @almacen, :class => "btn btn-info " %> |
+	<%= link_to 'Regresar', almacens_path, :class => "btn btn-info " %>
+	<br>
+	<br>
 </div>
 
+<style type="text/css">
+  body{
+    background-color: #8b8d8e;
+  }
+</style>

@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20190410133446) do
+=======
+ActiveRecord::Schema.define(version: 20190410132838) do
+>>>>>>> 9c043b955c127c4b3d47658b2fe741cddf64f73e
 
   create_table "almacens", force: :cascade do |t|
     t.string "nombre"
@@ -67,6 +71,7 @@ ActiveRecord::Schema.define(version: 20190410133446) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
   create_table "services", force: :cascade do |t|
     t.string "idservicio"
     t.string "etiquetaservicio"
@@ -81,6 +86,8 @@ ActiveRecord::Schema.define(version: 20190410133446) do
     t.datetime "updated_at", null: false
   end
 
+=======
+>>>>>>> 9c043b955c127c4b3d47658b2fe741cddf64f73e
   create_table "terceros", force: :cascade do |t|
     t.string "nombre"
     t.boolean "cliente"
@@ -102,6 +109,7 @@ ActiveRecord::Schema.define(version: 20190410133446) do
     t.datetime "updated_at", null: false
     t.string "profesiones"
     t.string "especialidades"
+    t.boolean "profesionista"
   end
 
 end
