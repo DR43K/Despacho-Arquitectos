@@ -7,22 +7,73 @@
 <div class="container col-lg-6">
 	<form action="/registrar_material" method="post">
 	  <div class="form-group">
-	    <h2 class="centrado"><label>Dar de alta material</label></h2>
-	    <label>Nombre</label>
-	    <input type="text" class="form-control" placeholder="Nombre del nuevo material" name="NombreMaterial">
-	  </div>
-	  <div class="form-group">
-	    <label>Precio unitario</label>
-	    <input type="text" class="form-control" name="PrecioUnitario" placeholder="$0">
-	  </div>
-	  <div class="form-group">
-	    <label>Categoria</label>
-	    <select class="form-control" name="Categoria">
-	      <option>Obra negra</option>
-	      <option>Acabados</option>
-	      <option>Instalaciones</option>
+	    <h2 class="centrado"><label>Dar de alta productos</label></h2>
+	    <label>Etiqueta</label>
+			<input type="text" class="form-control" 
+			placeholder="Nombre del nuevo producto" name="NombreProducto">
+		</div>
+		
+		<div class="form-group">
+			<label>Precio de Venta Minimo</label>
+			<input type="text" class="form-control" name="PrecioVenta" placeholder="$0">
+		</div>
+
+		<div class="form-group">
+	    <label>Estado del Producto</label>
+	    <select class="form-control" name="EstadoProducto">
+	      <option>Compra</option>
+	      <option>Venta</option>
 	    </select>
-	  </div>
+		</div>
+
+		<div class="form-group">
+			<label>Descripcion</label>
+			<input type="text" class="form-control" name="Descripcion" placeholder="Descripcion del producto">
+		</div>
+
+		<div class="form-group">
+			<label>Naturaleza</label>
+			<select class="form-control" name="Naturaleza">
+				<option>Materia Prima</option>
+				<option>Producto Manufacturado</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<label>Peso</label>
+			<input type="text" class="form-control" name="Peso" placeholder="Kg">
+		</div>
+
+		
+		<div class="form-group">
+			<label>Longitud</label>
+			<input type="text" class="form-control" name="Longitud">
+		</div>
+
+		
+		<div class="form-group">
+			<label>Largo</label>
+			<input type="text" class="form-control" name="Largo">
+		</div>
+
+		
+		<div class="form-group">
+			<label>Alto</label>
+			<input type="text" class="form-control" name="Alto">
+		</div>
+
+		
+		<div class="form-group">
+			<label>Superficie</label>
+			<input type="text" class="form-control" name="Superficie">
+		</div>
+
+		
+		<div class="form-group">
+			<label>Volumen</label>
+			<input type="text" class="form-control" name="Volumen">
+		</div>
+
 	  <div class="centrado">
 	  	<button style="width: 150px" type="submit" class="btn btn-primary">Guardar</button>
 	  </div>

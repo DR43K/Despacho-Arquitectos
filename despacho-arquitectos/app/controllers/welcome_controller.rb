@@ -5,17 +5,41 @@ class WelcomeController < ApplicationController
   	end
 
   	def registrar
-  		#nombre = params["NombreMaterial"]
-		nuevoMaterial = Prueba.new
-		nuevoMaterial.nombre = params["NombreMaterial"]
+  		#nombre = params["NombreProducto"]
+		nuevoProducto = Prueba.new
+		nuevoProducto.nombre = params["NombreProducto"]
 
-		#precio = params["PrecioUnitario"]
-		nuevoMaterial.precio = params["PrecioUnitario"]
+		#precio = params["PrecioVenta"]
+		nuevoProducto.precio = params["PrecioVenta"]
 
-		#categoria = params["Categoria"]
-		nuevoMaterial.categoria = params["Categoria"]
+		#estadoproducto = params["EstadoProducto"]
+		nuevoProducto.estadoproducto = params["EstadoProducto"]
 
-		nuevoMaterial.save
+		#descripcion = params["Descripcion"]
+		nuevoProducto.descripcion = params["Descripcion"]
+
+		#naturaleza = params["Naturaleza"]
+		nuevoProducto.naturaleza = params["Naturaleza"]
+
+		#peso = params["Peso"]
+		nuevoProducto.peso = params["Peso"]
+
+		#longitud = params["Longitud"]
+		nuevoProducto.longitud = params["Longitud"]
+
+		#largo = params["Largo"]
+		nuevoProducto.largo = params["Largo"]
+
+		#alto = params["Alto"]
+		nuevoProducto.alto = params["Alto"]
+
+		#superficie = params["Superficie"]
+		nuevoProducto.superficie = params["Superficie"]
+
+		#volumen = params["Volumen"]
+		nuevoProducto.volumen = params["Volumen"]
+
+		nuevoProducto.save
 		redirect_to '/ya'
 	end
 
