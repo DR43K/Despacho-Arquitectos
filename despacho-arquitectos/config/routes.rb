@@ -5,8 +5,7 @@ Rails.application.routes.draw do
 
   get 'provedores_provedores', to: 'provedores#provedores'
   get 'provedores_mostrar',to: 'provedores#mostrar'
-  get 'provedores_edi
-  tar',to: 'provedores#editar'
+  get 'provedores_editar',to: 'provedores#editar'
   post '/editar_provedor',to: 'provedores#editar_p'
   post '/new_provedor',to: 'provedores#nuevo'
 

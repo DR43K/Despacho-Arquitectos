@@ -22,10 +22,6 @@
 	  		<input type="text" name="apellido" id="etcs" value="" placeholder="Apellido" bind="query" class="form-control">
 	  	</div>
 	  	<div class="col">
-	  		<%= label_tag :profesion, nil, class: "sr-only" %>
-	  		<input type="text" name="profesion" id="etcs" value="" placeholder="Tipo de profesionista" bind="query" class="form-control">
-	  	</div>
-	  	<div class="col">
 	  		<%= label_tag :ciudad, nil, class: "sr-only" %>
 	  		<input type="text" name="ciudad" id="etcs" value="" placeholder="Ciudad" bind="query" class="form-control">
 	  	</div>
@@ -51,8 +47,6 @@
 	      <th scope="col">RFC</th>
 	      <th scope="col">Forma Juridica</th>
 	      <th scope="col">Estado</th>
-	      <th scope="col">Profesiones</th>
-	      <th scope="col">Especialidades</th>
 	      <th scope="col" colspan="2">Opciones</th>
 	    </tr>
 	  </thead>
@@ -73,8 +67,6 @@
 			     <td><%= x.rfc %> </td>
 			     <td><%= x.forma_juridica %> </td>
 			     <td><%= x.estado_tercero %> </td>
-			     <td><%= x.profesiones %> </td>
-			     <td><%= x.especialidades %> </td>
 			     <td><%= button_to 'Editar',provedores_editar_path(x.id), :method => :get, :class => "btn btn-warning " %></td>   
 			     <td><%= button_to 'Eliminar', eliminar_terceros_path(x.id), :method => :get, :class => "btn btn-danger" %></td> 
 		    </tr>
