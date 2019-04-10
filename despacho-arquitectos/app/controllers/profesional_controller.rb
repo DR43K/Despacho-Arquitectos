@@ -1,6 +1,7 @@
 class ProfesionalController < ApplicationController
 
 	skip_before_action :verify_authenticity_token
+	layout 'etc'
   def index
   	@espe = Professional.select(:especialidad).distinct
   end

@@ -5,12 +5,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+
+
 <div class="container-fluid">
 
 	<%= form_for '/entradas', method: :get do |f| %>
 
 	  
-	  <div class="row" style="margin-top: 40px;">
+	  <div class="row" style="margin-top: 40px; ">
 	  	<div class="col">
 	  		<%= label_tag :nombre, nil, class: "sr-only" %>
 	  		<input type="text" name="nombre" id="etcs" value="" placeholder="Nombre" bind="query" class="form-control">
@@ -36,10 +38,9 @@
 	<% end %>
 
 	<br>
-	
 	<table class="table table-hover" >
 	  <thead>
-	    <tr>
+	    <tr style="background-color: white;">
 	      <th scope="col">#</th>
 	      <th scope="col">Nombre</th>
 	      <th scope="col">Tipo tercero</th>
@@ -52,10 +53,10 @@
 	      <th scope="col">Estado</th>
 	      <th scope="col">Profesiones</th>
 	      <th scope="col">Especialidades</th>
-	      <th scope="col" colspan="2"></th>
+	      <th scope="col" colspan="2">Opciones</th>
 	    </tr>
 	  </thead>
-	  <tbody>
+	  <tbody style="background-color: white;">
 	  	<% @todos.each do |x| %>
 		    <tr>
 		      <th scope="row"><%= x.id %></th>
@@ -74,12 +75,16 @@
 			     <td><%= x.estado_tercero %> </td>
 			     <td><%= x.profesiones %> </td>
 			     <td><%= x.especialidades %> </td>
-			     <td><%= button_to 'Editar', editar_terceros_path(x.id), :method => :get %></td>   
-			     <td><%= button_to 'Eliminar', eliminar_terceros_path(x.id), :method => :get %></td> 
+			     <td><%= button_to 'Editar', editar_terceros_path(x.id), :method => :get, :class => "btn btn-warning " %></td>   
+			     <td><%= button_to 'Eliminar', eliminar_terceros_path(x.id), :method => :get, :class => "btn btn-danger" %></td> 
 		    </tr>
 	    <% end %>
 	  </tbody>
 	</table>
-
-	
 </div>
+
+<style type="text/css">
+	body{
+		background-color: #8b8d8e;
+	}
+</style>
