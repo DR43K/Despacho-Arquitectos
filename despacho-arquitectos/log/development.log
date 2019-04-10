@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Started GET "/profesional" for ::1 at 2019-03-31 18:06:07 -0600
   
 ActiveRecord::PendingMigrationError (
@@ -15,10 +16,37 @@ activesupport (5.1.6.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+=======
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (112.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (96.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-03-30 01:30:41.471817"], ["updated_at", "2019-03-30 01:30:41.471817"]]
+  [1m[35m (86.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2019-03-29 19:47:50 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/juan/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/railties-5.1.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/juan/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/railties-5.1.7/lib/rails/templates/rails/welcome/index.html.erb (5.0ms)
+Completed 200 OK in 246ms (Views: 11.0ms)
+
+
+Started GET "/index" for ::1 at 2019-03-29 19:48:10 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+>>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+<<<<<<< HEAD
 actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
 railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
@@ -36,11 +64,31 @@ actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
 rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
 railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+=======
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+>>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 puma (3.12.1) lib/puma/configuration.rb:227:in `call'
 puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/favicon.ico" for ::1 at 2019-03-31 18:06:16 -0600
   
 ActiveRecord::PendingMigrationError (
@@ -58,10 +106,25 @@ activesupport (5.1.6.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+=======
+Started GET "/" for ::1 at 2019-03-29 20:08:40 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/juan/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/railties-5.1.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/juan/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/railties-5.1.7/lib/rails/templates/rails/welcome/index.html.erb (4.8ms)
+Completed 200 OK in 10ms (Views: 8.4ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-03-29 20:08:41 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+>>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+<<<<<<< HEAD
 actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
 railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
@@ -79,11 +142,31 @@ actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
 rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
 railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+=======
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+>>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 puma (3.12.1) lib/puma/configuration.rb:227:in `call'
 puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
   [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
   [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
@@ -110,10 +193,18 @@ Started GET "/favicon.ico" for ::1 at 2019-03-31 18:07:09 -0600
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   
 actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+=======
+Started GET "/nuevo_material" for ::1 at 2019-03-29 20:08:47 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/nuevo_material"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+>>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+<<<<<<< HEAD
 actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
 railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
@@ -131,11 +222,31 @@ actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
 rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
 railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+=======
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+>>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 puma (3.12.1) lib/puma/configuration.rb:227:in `call'
 puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/profesional" for ::1 at 2019-03-31 18:08:48 -0600
   
 AbstractController::Helpers::MissingHelperError (Missing helper file helpers/c:/users/carlo/one_drive/documentos/rails/despacho_arquitectos/despacho_arquitectos/app/helpers/application_helper.rb_helper.rb):
@@ -660,10 +771,36 @@ Started GET "/favicon.ico" for ::1 at 2019-03-31 18:59:28 -0600
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   
 actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+=======
+Started GET "/nuevo_material" for ::1 at 2019-03-29 20:11:33 -0600
+  
+ArgumentError ('localhost:300' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:3:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/nuevo_material" for ::1 at 2019-03-29 20:11:48 -0600
+  
+ArgumentError ('localhost:300' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:2:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/nuevo_material" for ::1 at 2019-03-29 20:12:09 -0600
+  
+ArgumentError ('localhost:3000' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:2:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/nuevo_material" for ::1 at 2019-03-29 20:12:12 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/nuevo_material"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+>>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+<<<<<<< HEAD
 actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
 railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
@@ -681,11 +818,31 @@ actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
 rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
 railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+=======
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+>>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 puma (3.12.1) lib/puma/configuration.rb:227:in `call'
 puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/profesional" for ::1 at 2019-03-31 18:59:43 -0600
 Processing by ProfesionalController#index as HTML
   Rendering profesional/index.html.erb within layouts/application
@@ -1066,10 +1223,24 @@ activesupport (5.1.6.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+=======
+Started GET "/nuevo_material" for ::1 at 2019-03-29 20:13:15 -0600
+  
+ArgumentError ('localhost:3000' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:2:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/nuevo_material" for ::1 at 2019-03-29 20:13:27 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/nuevo_material"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+>>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+<<<<<<< HEAD
 actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
 railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
@@ -1087,11 +1258,31 @@ actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
 rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
 railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+=======
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+>>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 puma (3.12.1) lib/puma/configuration.rb:227:in `call'
 puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started POST "/new_p" for ::1 at 2019-03-31 19:24:01 -0600
 Processing by ProfesionalController#nuevo as HTML
   Parameters: {"browser"=>"", "nivel"=>"n3"}
@@ -1144,10 +1335,18 @@ activesupport (5.1.6.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+=======
+Started GET "/nuevo_material" for ::1 at 2019-03-29 20:13:30 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/nuevo_material"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+>>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+<<<<<<< HEAD
 actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
 railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
@@ -1165,11 +1364,31 @@ actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
 rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
 railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+=======
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+>>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 puma (3.12.1) lib/puma/configuration.rb:227:in `call'
 puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/profesional" for ::1 at 2019-03-31 19:24:29 -0600
 Processing by ProfesionalController#index as HTML
   Rendering profesional/index.html.erb within layouts/application
@@ -1329,10 +1548,81 @@ activesupport (5.1.6.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+=======
+Started GET "/nuevo_material/nuevo_material" for ::1 at 2019-03-29 20:19:01 -0600
+  
+ArgumentError ('localhost:300' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:3:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/welcome/n_product" for ::1 at 2019-03-29 20:20:25 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 384ms
+
+
+  
+ActionView::Template::Error (require_tree argument must be a directory):
+    4:     <title>DespachoArquitectos</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/cable.js:6
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1604378598502513917_47440876890960'
+Started GET "/welcome/n_product" for ::1 at 2019-03-29 20:23:23 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 25ms
+
+
+  
+ActionView::Template::Error (require_tree argument must be a directory):
+    4:     <title>DespachoArquitectos</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/cable.js:6
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1604378598502513917_69930698403840'
+Started GET "/welcome/n_product" for ::1 at 2019-03-29 20:24:37 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 18ms
+
+
+  
+ActionView::Template::Error (require_tree argument must be a directory):
+    4:     <title>DespachoArquitectos</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/cable.js:6
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1604378598502513917_69930704991140'
+Started GET "/favicon.ico" for ::1 at 2019-03-29 20:24:39 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+>>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+<<<<<<< HEAD
 actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
 railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
@@ -1350,11 +1640,31 @@ actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
 rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
 railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+=======
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+>>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 puma (3.12.1) lib/puma/configuration.rb:227:in `call'
 puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/profesional" for ::1 at 2019-03-31 19:35:30 -0600
 Processing by ProfesionalController#index as HTML
   Rendering profesional/index.html.erb within layouts/application
@@ -1902,10 +2212,235 @@ Started GET "/favicon.ico" for ::1 at 2019-03-31 20:34:19 -0600
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   
 actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+=======
+Started GET "/welcome/n_product" for ::1 at 2019-03-29 20:27:42 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 22ms
+
+
+  
+ActionView::Template::Error (require_tree argument must be a directory):
+    4:     <title>DespachoArquitectos</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/cable.js:6
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1604378598502513917_69930524296600'
+Started GET "/welcome/n_product" for ::1 at 2019-03-29 20:27:45 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 22ms
+
+
+  
+ActionView::Template::Error (require_tree argument must be a directory):
+    4:     <title>DespachoArquitectos</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/cable.js:6
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1604378598502513917_69930703688840'
+Started GET "/welcome/n_product" for ::1 at 2019-03-29 20:28:25 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 32ms
+
+
+  
+ActionView::Template::Error (require_tree argument must be a directory):
+    4:     <title>DespachoArquitectos</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/cable.js:6
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1604378598502513917_69930526124700'
+Started GET "/welcome/n_product" for ::1 at 2019-03-29 20:28:32 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 21ms
+
+
+  
+ActionView::Template::Error (require_tree argument must be a directory):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/cable.js:6
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1604378598502513917_69930703616380'
+Started GET "/welcome/n_product" for ::1 at 2019-03-29 20:28:38 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 25ms
+
+
+  
+ActionView::Template::Error (require_tree argument must be a directory):
+    4:     <title>DespachoArquitectos</title>
+    5:     
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/cable.js:6
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1604378598502513917_69930700821480'
+Started GET "/welcome/n_product" for ::1 at 2019-03-29 20:28:46 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 10ms (Views: 8.2ms)
+
+
+Started GET "/n_product" for ::1 at 2019-03-29 20:29:49 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 4.0ms)
+
+
+Started GET "/n_product" for ::1 at 2019-03-29 20:29:54 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 7.2ms)
+
+
+Started GET "/n_product" for ::1 at 2019-03-29 20:35:44 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 9ms (Views: 6.8ms)
+
+
+Started GET "/n_product" for ::1 at 2019-03-29 20:37:11 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 5.8ms)
+
+
+Started GET "/n_product" for ::1 at 2019-03-29 20:37:50 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 9ms (Views: 7.2ms)
+
+
+Started GET "/n_product" for ::1 at 2019-03-29 20:38:19 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 5.2ms)
+
+
+Started GET "/n_product" for ::1 at 2019-03-29 20:38:26 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 4.9ms)
+
+
+Started GET "/n_product" for ::1 at 2019-03-29 20:38:33 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 9ms (Views: 7.2ms)
+
+
+Started GET "/n_product" for ::1 at 2019-03-29 20:39:23 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 4.7ms)
+
+
+Started GET "/n_product" for ::1 at 2019-03-29 20:39:31 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 5.0ms)
+
+
+Started GET "/n_product" for ::1 at 2019-03-29 20:48:29 -0600
+  
+ActionController::RoutingError (undefined local variable or method `params' for main:Object):
+  
+app/controllers/welcome_controller.rb:5:in `<top (required)>'
+Started GET "/n_product" for ::1 at 2019-03-29 20:48:38 -0600
+  
+ActionController::RoutingError (undefined local variable or method `params' for main:Object):
+  
+app/controllers/welcome_controller.rb:5:in `<top (required)>'
+Started GET "/n_product" for ::1 at 2019-03-29 20:48:51 -0600
+  
+SyntaxError (/home/juan/Proyecto dolibarr/Despacho-Arquitectos/despacho-arquitectos/app/controllers/welcome_controller.rb:5: syntax error, unexpected '=', expecting end-of-input
+=beginNombre = params["NombreM...
+^):
+  
+app/controllers/welcome_controller.rb:5: syntax error, unexpected '=', expecting end-of-input
+Started GET "/n_product" for ::1 at 2019-03-29 20:49:23 -0600
+  
+SyntaxError (/home/juan/Proyecto dolibarr/Despacho-Arquitectos/despacho-arquitectos/app/controllers/welcome_controller.rb:5: syntax error, unexpected '=', expecting end-of-input
+=begin=end
+^):
+  
+app/controllers/welcome_controller.rb:5: syntax error, unexpected '=', expecting end-of-input
+Started GET "/n_product" for ::1 at 2019-03-29 20:49:26 -0600
+  
+SyntaxError (/home/juan/Proyecto dolibarr/Despacho-Arquitectos/despacho-arquitectos/app/controllers/welcome_controller.rb:5: syntax error, unexpected '=', expecting end-of-input
+=begin=end
+^):
+  
+app/controllers/welcome_controller.rb:5: syntax error, unexpected '=', expecting end-of-input
+Started GET "/n_product" for ::1 at 2019-03-29 20:49:49 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 6.3ms)
+
+
+Started GET "/n_product" for ::1 at 2019-03-30 00:17:58 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 687ms (Views: 85.1ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-03-30 00:18:00 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+>>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+<<<<<<< HEAD
 actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
 railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
@@ -1923,11 +2458,31 @@ actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
 rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
 railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+=======
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+>>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 puma (3.12.1) lib/puma/configuration.rb:227:in `call'
 puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/ver?utf8=%E2%9C%93&ciudad=aguascalientes" for ::1 at 2019-03-31 20:34:59 -0600
 Processing by ProfesionalController#mostrar as HTML
   Parameters: {"utf8"=>"✓", "ciudad"=>"aguascalientes"}
@@ -2067,10 +2622,32 @@ Started GET "/profesional?status=0" for ::1 at 2019-03-31 20:46:45 -0600
 ActionController::RoutingError (No route matches [GET] "/profesional"):
   
 actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+=======
+Started GET "/n_product" for ::1 at 2019-03-30 00:22:38 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 5.5ms)
+
+
+Started GET "/n_product" for ::1 at 2019-03-30 00:23:17 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 4.3ms)
+
+
+Started GET "/registrar_material?NombreMaterial=edede&PrecioUnitario=2323&Categoria=Instalaciones" for ::1 at 2019-03-30 00:23:24 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/registrar_material"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+>>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+<<<<<<< HEAD
 actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
 railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
@@ -2088,11 +2665,31 @@ actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
 rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
 railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+=======
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+>>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 puma (3.12.1) lib/puma/configuration.rb:227:in `call'
 puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started POST "/new_p" for ::1 at 2019-03-31 20:47:04 -0600
 Processing by ProfesionalController#nuevo as HTML
   Parameters: {"nombre"=>"Charlie", "apellidos"=>"Carreon", "direccion"=>"Municipio libre Zacatecas, CP 20199", "telefono"=>"4491044321", "correo"=>"carlos@marketful.mx", "pagina"=>"www.hola.com", "skype"=>"Charlie45", "carrera"=>"Ing. Sistemas", "grado"=>"Universidad", "browser"=>"", "especialidad"=>"", "cantidad"=>"3", "unidad"=>"Años", "obras"=>"Ninguna\r\nGobierno", "nivel"=>"n1"}
@@ -2416,10 +3013,72 @@ Started GET "/favicon.ico" for ::1 at 2019-04-08 21:38:52 -0500
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   
 actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+=======
+Started GET "/n_product" for ::1 at 2019-03-30 00:23:58 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 9ms (Views: 7.3ms)
+
+
+Started POST "/registrar_material" for ::1 at 2019-03-30 00:24:03 -0600
+Processing by WelcomeController#registrar as HTML
+  Parameters: {"NombreMaterial"=>"12ed", "PrecioUnitario"=>"12", "Categoria"=>"Obra negra"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 2ms
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.7) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.7) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.7) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.7) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.7) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.7) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.7) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+>>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+<<<<<<< HEAD
 actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
 railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
@@ -2437,11 +3096,31 @@ actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
 actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
 rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
 railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+=======
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+>>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 puma (3.12.1) lib/puma/configuration.rb:227:in `call'
 puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/profesional" for ::1 at 2019-04-08 21:39:13 -0500
 Processing by ProfesionalController#index as HTML
   Rendering profesional/index.html.erb within layouts/application
@@ -3512,5 +4191,75 @@ Processing by ProfesionalController#mostrar as HTML
   [1m[36mTercero Load (1.0ms)[0m  [1m[34mSELECT "terceros".* FROM "terceros"[0m
   Rendered profesional/mostrar.html.erb within layouts/application (8.0ms)
 Completed 200 OK in 193ms (Views: 141.1ms | ActiveRecord: 1.0ms)
+=======
+Started GET "/n_product" for ::1 at 2019-03-30 00:25:04 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 5.6ms)
+
+
+Started POST "/registrar_material" for ::1 at 2019-03-30 00:25:10 -0600
+Processing by WelcomeController#registrar as HTML
+  Parameters: {"NombreMaterial"=>"2323", "PrecioUnitario"=>"23", "Categoria"=>"Acabados"}
+Completed 500 Internal Server Error in 7ms
+
+
+  
+NameError (uninitialized constant WelcomeController::Productos):
+  
+app/controllers/welcome_controller.rb:9:in `registrar'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePruebas (20190330062706)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "pruebas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "precio" integer, "categoria" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190330062706"]]
+  [1m[35m (111.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/n_product" for ::1 at 2019-03-30 00:28:53 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/registrar_material" for ::1 at 2019-03-30 00:28:59 -0600
+Processing by WelcomeController#registrar as HTML
+  Parameters: {"NombreMaterial"=>"edede", "PrecioUnitario"=>"1212", "Categoria"=>"Acabados"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "pruebas" ("nombre", "precio", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "edede"], ["precio", 1212], ["categoria", "Acabados"], ["created_at", "2019-03-30 06:28:59.918329"], ["updated_at", "2019-03-30 06:28:59.918329"]]
+  [1m[35m (110.3ms)[0m  [1m[36mcommit transaction[0m
+No template found for WelcomeController#registrar, rendering head :no_content
+Completed 204 No Content in 222ms (ActiveRecord: 114.9ms)
+
+
+Started GET "/n_product" for ::1 at 2019-03-30 00:31:01 -0600
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 5.3ms)
+
+
+Started POST "/registrar_material" for ::1 at 2019-03-30 00:31:07 -0600
+Processing by WelcomeController#registrar as HTML
+  Parameters: {"NombreMaterial"=>"2323", "PrecioUnitario"=>"1231", "Categoria"=>"Instalaciones"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "pruebas" ("nombre", "precio", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "2323"], ["precio", 1231], ["categoria", "Instalaciones"], ["created_at", "2019-03-30 06:31:07.694435"], ["updated_at", "2019-03-30 06:31:07.694435"]]
+  [1m[35m (150.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/ya
+Completed 302 Found in 191ms (ActiveRecord: 153.1ms)
+
+
+Started GET "/ya" for ::1 at 2019-03-30 00:31:07 -0600
+Processing by WelcomeController#ya as HTML
+  Rendering welcome/ya.html.erb within layouts/application
+  Rendered welcome/ya.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+>>>>>>> eea8cf127ab31a54463c1925ba45cc41ce983413
 
 
