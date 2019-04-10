@@ -12,7 +12,6 @@
 
 ActiveRecord::Schema.define(version: 20190410133446) do
 
-
   create_table "almacens", force: :cascade do |t|
     t.string "nombre"
     t.string "descripcion"
@@ -84,14 +83,6 @@ ActiveRecord::Schema.define(version: 20190410133446) do
     t.integer "duracion"
     t.float "precioventa"
     t.float "precioventamin"
-    t.string "categoria"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "pruebas", force: :cascade do |t|
-    t.string "nombre"
-    t.integer "precio"
     t.string "categoria"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
