@@ -1,0 +1,55 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<div class="container" style="background-color: white;">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @almacen.nombre %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @almacen.descripcion %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @almacen.direccion %>
+</p>
+
+<p>
+  <strong>Codigo postal:</strong>
+  <%= @almacen.codigo_postal %>
+</p>
+
+<p>
+  <strong>Ciudad:</strong>
+  <%= @almacen.ciudad %>
+</p>
+
+<p>
+  <strong>Estado almacen:</strong>
+  <%= @almacen.estado_almacen %>
+</p>
+
+<p>
+  <strong>Pais:</strong>
+  <%= @almacen.pais %>
+</p>
+
+<%= link_to 'Editar', edit_almacen_path(@almacen),:class => "btn btn-info " %> |
+<%= link_to 'Regresar', almacens_path,:class => "btn btn-info " %>
+<br>
+<br>
+</div>
+
+<style type="text/css">
+  body{
+    background-color: #8b8d8e;
+  }
+</style>

@@ -1,0 +1,90 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+<div class="container-fluid">
+
+	<%= form_for '/entradas', method: :get do |f| %>
+
+	  
+	  <div class="row" style="margin-top: 40px; ">
+	  	<div class="col">
+	  		<%= label_tag :nombre, nil, class: "sr-only" %>
+	  		<input type="text" name="nombre" id="etcs" value="" placeholder="Nombre" bind="query" class="form-control">
+	  	</div>
+	  	<div class="col">
+	  		<%= label_tag :apellido, nil, class: "sr-only" %>
+	  		<input type="text" name="apellido" id="etcs" value="" placeholder="Apellido" bind="query" class="form-control">
+	  	</div>
+	  	<div class="col">
+	  		<%= label_tag :profesion, nil, class: "sr-only" %>
+	  		<input type="text" name="profesion" id="etcs" value="" placeholder="Tipo de profesionista" bind="query" class="form-control">
+	  	</div>
+	  	<div class="col">
+	  		<%= label_tag :ciudad, nil, class: "sr-only" %>
+	  		<input type="text" name="ciudad" id="etcs" value="" placeholder="Ciudad" bind="query" class="form-control">
+	  	</div>
+	  	<div class="col">
+	  		<button class="btn btn-success btn-lg">Buscar</button>
+	  	</div>
+		  
+		  
+	  </div>
+	<% end %>
+
+	<br>
+	<table class="table table-hover" >
+	  <thead>
+	    <tr style="background-color: white;">
+	      <th scope="col">#</th>
+	      <th scope="col">Nombre</th>
+	      <th scope="col">Tipo tercero</th>
+	      <th scope="col">Direccion</th>
+	      <th scope="col">Telefono</th>
+	      <th scope="col">Correo</th>
+	      <th scope="col">Pagina</th>
+	      <th scope="col">RFC</th>
+	      <th scope="col">Forma Juridica</th>
+	      <th scope="col">Estado</th>
+	      <th scope="col">Profesiones</th>
+	      <th scope="col">Especialidades</th>
+	      <th scope="col" colspan="2">Opciones</th>
+	    </tr>
+	  </thead>
+	  <tbody style="background-color: white;">
+	  	<% @todos.each do |x| %>
+		    <tr>
+		      <th scope="row"><%= x.id %></th>
+			     <td><%= x.nombre %> </td>
+			     <% if x.proveedor == true %>
+			     	<td>Proveedor</td>
+			     <% else %>
+			     	<td>Cliente</td>
+			     <% end %>
+			     <td><%= x.direccion %> </td>
+			     <td><%= x.telefono %> </td>
+			     <td><%= x.email %> </td>
+			     <td><%= x.sitio_web %> </td>
+			     <td><%= x.rfc %> </td>
+			     <td><%= x.forma_juridica %> </td>
+			     <td><%= x.estado_tercero %> </td>
+			     <td><%= x.profesiones %> </td>
+			     <td><%= x.especialidades %> </td>
+			     <td><%= button_to 'Editar',provedores_editar_path(x.id), :method => :get, :class => "btn btn-warning " %></td>   
+			     <td><%= button_to 'Eliminar', eliminar_terceros_path(x.id), :method => :get, :class => "btn btn-danger" %></td> 
+		    </tr>
+	    <% end %>
+	  </tbody>
+	</table>
+</div>
+
+<style type="text/css">
+	body{
+		background-color: #8b8d8e;
+	}
+</style>

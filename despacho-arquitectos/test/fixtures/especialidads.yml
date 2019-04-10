@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  terceros_idterceros: 
+  nombre_especialidad: MyString
+  anios_experiencia: 1
+
+two:
+  terceros_idterceros: 
+  nombre_especialidad: MyString
+  anios_experiencia: 1

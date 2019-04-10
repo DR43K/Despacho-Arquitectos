@@ -1,0 +1,68 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<div class="container">
+  <%= form_with(model: almacen, local: true) do |form| %>
+    <% if almacen.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(almacen.errors.count, "error") %> prohibited this almacen from being saved:</h2>
+
+        <ul>
+        <% almacen.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= form.label :nombre %>
+      <%= form.text_field :nombre, id: :almacen_nombre %>
+    </div>
+
+    <div class="field">
+      <%= form.label :descripcion %>
+      <%= form.text_field :descripcion, id: :almacen_descripcion %>
+    </div>
+
+    <div class="field">
+      <%= form.label :direccion %>
+      <%= form.text_field :direccion, id: :almacen_direccion %>
+    </div>
+
+    <div class="field">
+      <%= form.label :codigo_postal %>
+      <%= form.text_field :codigo_postal, id: :almacen_codigo_postal %>
+    </div>
+
+    <div class="field">
+      <%= form.label :ciudad %>
+      <%= form.text_field :ciudad, id: :almacen_ciudad %>
+    </div>
+
+    <div class="field">
+      <%= form.label :estado_almacen %>
+      <%= form.text_field :estado_almacen, id: :almacen_estado_almacen %>
+    </div>
+
+    <div class="field">
+      <%= form.label :pais %>
+      <%= form.text_field :pais, id: :almacen_pais %>
+    </div>
+
+    <div class="actions">
+      
+      <input type="submit" name="" class="btn btn-info" value="Guardar">
+    </div>
+  <% end %>
+</div>
+
+<style type="text/css">
+  body{
+    background-color: #8b8d8e;
+  }
+</style>
