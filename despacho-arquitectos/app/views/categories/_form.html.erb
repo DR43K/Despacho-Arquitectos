@@ -13,6 +13,7 @@
 
   <div class="field">
     <%= form.label :idcategorias %>
+    <%= form.label :id %>
     <%= form.number_field :idcategorias, id: :category_idcategorias %>
   </div>
 
@@ -22,6 +23,8 @@
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+
+    <button class="btn btn-success" type="submit">Guardar</button> 
+
   </div>
 <% end %>

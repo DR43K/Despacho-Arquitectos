@@ -10,12 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20190410133446) do
-=======
-ActiveRecord::Schema.define(version: 20190410132838) do
->>>>>>> 9c043b955c127c4b3d47658b2fe741cddf64f73e
+
 
   create_table "almacens", force: :cascade do |t|
     t.string "nombre"
@@ -25,6 +21,13 @@ ActiveRecord::Schema.define(version: 20190410132838) do
     t.string "ciudad"
     t.string "estado_almacen"
     t.string "pais"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "categories", force: :cascade do |t|
+    t.integer "idcategorias"
+    t.string "nombre"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -63,9 +66,6 @@ ActiveRecord::Schema.define(version: 20190410132838) do
     t.datetime "updated_at", null: false
     t.string "apellido"
   end
-=======
-ActiveRecord::Schema.define(version: 20190410032009) do
->>>>>>> caa2054b985543f89213def8de93eddb55c0d255
 
   create_table "pruebas", force: :cascade do |t|
     t.string "nombre"
@@ -75,10 +75,6 @@ ActiveRecord::Schema.define(version: 20190410032009) do
     t.datetime "updated_at", null: false
   end
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> caa2054b985543f89213def8de93eddb55c0d255
   create_table "services", force: :cascade do |t|
     t.string "idservicio"
     t.string "etiquetaservicio"
@@ -93,9 +89,14 @@ ActiveRecord::Schema.define(version: 20190410032009) do
     t.datetime "updated_at", null: false
   end
 
-<<<<<<< HEAD
-=======
->>>>>>> 9c043b955c127c4b3d47658b2fe741cddf64f73e
+  create_table "pruebas", force: :cascade do |t|
+    t.string "nombre"
+    t.integer "precio"
+    t.string "categoria"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "terceros", force: :cascade do |t|
     t.string "nombre"
     t.boolean "cliente"
@@ -120,6 +121,4 @@ ActiveRecord::Schema.define(version: 20190410032009) do
     t.boolean "profesionista"
   end
 
-=======
->>>>>>> caa2054b985543f89213def8de93eddb55c0d255
 end

@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
 
-<<<<<<< HEAD
   resources :services
-=======
+
 
   get 'provedores_provedores', to: 'provedores#provedores'
   get 'provedores_mostrar',to: 'provedores#mostrar'
@@ -12,7 +10,8 @@ Rails.application.routes.draw do
   post '/editar_provedor',to: 'provedores#editar_p'
   post '/new_provedor',to: 'provedores#nuevo'
 
->>>>>>> 9c043b955c127c4b3d47658b2fe741cddf64f73e
+  resources :categories
+
   resources :almacens
   get 'profesional', to: 'profesional#index'
   post 'new_p', to: 'profesional#nuevo'
@@ -30,9 +29,8 @@ Rails.application.routes.draw do
   get 'welcome/n_product'
   get "n_product", to: "welcome#n_product"
 
-=======
   resources :services
->>>>>>> caa2054b985543f89213def8de93eddb55c0d255
+
   get 'welcome/n_product'
   get "n_product", to: "welcome#n_product"
 
