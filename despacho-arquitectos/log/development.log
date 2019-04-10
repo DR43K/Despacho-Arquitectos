@@ -7420,6 +7420,7 @@ Processing by ProfesionalController#mostrar as HTML
 Completed 200 OK in 256ms (Views: 163.2ms | ActiveRecord: 0.0ms)
 
 
+<<<<<<< HEAD
 Started GET "/eliminar_terceros.8" for ::1 at 2019-04-10 09:31:37 -0500
 Processing by ProfesionalController#eliminar as 
   [1m[36mTercero Load (0.0ms)[0m  [1m[34mSELECT  "terceros".* FROM "terceros" WHERE "terceros"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
@@ -7590,3 +7591,24 @@ puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
 >>>>>>> 9c043b955c127c4b3d47658b2fe741cddf64f73e
+=======
+Started GET "/" for ::1 at 2019-04-09 22:16:36 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#n_product as HTML
+  Rendering welcome/n_product.html.erb within layouts/application
+  Rendered welcome/n_product.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 136ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateServices (20190410032009)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (15.6ms)[0m  [1m[35mCREATE TABLE "services" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "idservicio" varchar, "etiquetaservicio" varchar, "estadoventa" varchar, "estadocompra" varchar, "descripcion" text, "duracion" integer, "precioventa" float, "precioventamin" float, "categoria" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190410032009"]]
+  [1m[35m (120.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+>>>>>>> caa2054b985543f89213def8de93eddb55c0d255

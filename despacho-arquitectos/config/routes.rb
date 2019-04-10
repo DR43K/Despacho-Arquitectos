@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
 
 <<<<<<< HEAD
   resources :services
@@ -29,6 +30,9 @@ Rails.application.routes.draw do
   get 'welcome/n_product'
   get "n_product", to: "welcome#n_product"
 
+=======
+  resources :services
+>>>>>>> caa2054b985543f89213def8de93eddb55c0d255
   get 'welcome/n_product'
   get "n_product", to: "welcome#n_product"
 

@@ -1,5 +1,9 @@
+<<<<<<< HEAD
  
     <%= form_with(model: service, local: true) do |form| %>
+=======
+<%= form_with(model: service, local: true) do |form| %>
+>>>>>>> caa2054b985543f89213def8de93eddb55c0d255
   <% if service.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(service.errors.count, "error") %> prohibited this service from being saved:</h2>
@@ -12,6 +16,7 @@
     </div>
   <% end %>
 
+<<<<<<< HEAD
 <div class="modal-body">
         <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
       <div class="form-group row">
@@ -67,3 +72,54 @@
     <% end %>
   </div>
 </div>
+=======
+  <div class="field">
+    <%= form.label :idservicio %>
+    <%= form.text_field :idservicio, id: :service_idservicio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :etiquetaservicio %>
+    <%= form.text_field :etiquetaservicio, id: :service_etiquetaservicio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :estadoventa %>
+    <%= form.text_field :estadoventa, id: :service_estadoventa %>
+  </div>
+
+  <div class="field">
+    <%= form.label :estadocompra %>
+    <%= form.text_field :estadocompra, id: :service_estadocompra %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descripcion %>
+    <%= form.text_area :descripcion, id: :service_descripcion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :duracion %>
+    <%= form.number_field :duracion, id: :service_duracion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :precioventa %>
+    <%= form.text_field :precioventa, id: :service_precioventa %>
+  </div>
+
+  <div class="field">
+    <%= form.label :precioventamin %>
+    <%= form.text_field :precioventamin, id: :service_precioventamin %>
+  </div>
+
+  <div class="field">
+    <%= form.label :categoria %>
+    <%= form.text_field :categoria, id: :service_categoria %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+>>>>>>> caa2054b985543f89213def8de93eddb55c0d255
