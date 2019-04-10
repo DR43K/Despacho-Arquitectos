@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  terceros_idterceros: 1
+  nombre_profesion: MyString
+  cedula_profesional: MyString
+
+two:
+  terceros_idterceros: 1
+  nombre_profesion: MyString
+  cedula_profesional: MyString

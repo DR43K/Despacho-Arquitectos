@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @almacen.nombre %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @almacen.descripcion %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @almacen.direccion %>
+</p>
+
+<p>
+  <strong>Codigo postal:</strong>
+  <%= @almacen.codigo_postal %>
+</p>
+
+<p>
+  <strong>Ciudad:</strong>
+  <%= @almacen.ciudad %>
+</p>
+
+<p>
+  <strong>Estado almacen:</strong>
+  <%= @almacen.estado_almacen %>
+</p>
+
+<p>
+  <strong>Pais:</strong>
+  <%= @almacen.pais %>
+</p>
+
+<%= link_to 'Edit', edit_almacen_path(@almacen) %> |
+<%= link_to 'Back', almacens_path %>
