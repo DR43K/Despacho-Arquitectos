@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+
   get 'provedores_provedores', to: 'provedores#provedores'
   get 'provedores_mostrar',to: 'provedores#mostrar'
   get 'provedores_edi
@@ -17,6 +18,9 @@ Rails.application.routes.draw do
   get '/editar_terceros', to: 'profesional#editar'
   get '/eliminar_terceros', to: 'profesional#eliminar'
 
+
+
+  resources :categories
 
   get 'welcome/n_product'
   get "n_product", to: "welcome#n_product"
