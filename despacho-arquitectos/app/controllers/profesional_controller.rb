@@ -9,7 +9,7 @@ class ProfesionalController < ApplicationController
   def nuevo
   	nuevo = Tercero.new
 	nuevo.nombre = params["nombre"] + " " + params["apellidos"]
-	nuevo.proveedor = true
+	nuevo.profesionista = true
 	nuevo.direccion = params["pais"] + " " + params["ciudad"] + " " + params["estado"] + " " + params["direccion"] + " " + "CP " + params["codigo_postal"]
 	nuevo.codigo_postal = params["codigo_postal"] 
 	nuevo.ciudad = params["ciudad"]

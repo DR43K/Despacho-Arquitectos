@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190409041723) do
+ActiveRecord::Schema.define(version: 20190410132838) do
 
   create_table "almacens", force: :cascade do |t|
     t.string "nombre"
@@ -88,6 +88,7 @@ ActiveRecord::Schema.define(version: 20190409041723) do
     t.datetime "updated_at", null: false
     t.string "profesiones"
     t.string "especialidades"
+    t.boolean "profesionista"
   end
 
 end
