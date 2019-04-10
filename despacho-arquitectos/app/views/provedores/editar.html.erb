@@ -1,0 +1,155 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<% if params["status"].present? and params["status"]=="0" %>
+	<div class="alert alert-success alert-dismissible">
+	    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+	    <strong>Listo!</strong> Se registro exitosamente al profesionista.
+	</div>
+<% end %>
+
+<% if params["status"].present? and params["status"]=="1" %>
+	<div class="alert alert-warning alert-dismissible">
+	    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+	    <strong>Cancelado!</strong> Se anulo el proceso de registro.
+	</div>
+<% end %>
+
+<div class="container"></div>
+	<center>
+		<h1>Directorio de Provedores <span class="badge badge-secondary">Actualizar Provedor</span></h1>
+	</center>
+	<form action="/editar_provedor" method="post" id="myform">
+		<div class="container">
+
+			<h3><span class="badge badge-secondary">Datos personales</span></h3>
+			<div class="row">
+
+			    <div class="col">
+			      <input type="text" class="form-control" name="nombre" value="<%= @tercero.nombre %>" placeholder="Nombre(s)">
+			    </div>
+			    <div class="col">
+			      <input type="text" class="form-control" name="apellidos" placeholder="Apellidos">
+			    </div>
+		  	</div>
+
+		  	<br>
+		  	<input type="text" hidden="true" name="id_tercero" value="<%= @tercero.id %>">
+			<div class="form-group">
+			    <label for="formGroupExampleInput">Direccion</label>
+			    <textarea class="form-control" name="direccion" id="exampleFormControlTextarea3" value="" placeholder="" rows="3"><%= @tercero.direccion %></textarea>
+		  	</div>
+
+		  	<div class="row">
+			  	<div class="col">
+			      <input type="text" class="form-control" name="codigo_postal" value="<%= @tercero.codigo_postal %>" placeholder="Codigo postal">
+			    </div>
+			    <div class="col">
+			      <input type="text" class="form-control" name="ciudad" value="<%= @tercero.ciudad %>" placeholder="Ciudad">
+			    </div>
+			    <div class="col">
+			      <input type="text" class="form-control" name="estado" value="<%= @tercero.estado_provincia %>" placeholder="Estado/provincia">
+			    </div>
+			    <div class="col">
+			      <input type="text" class="form-control" name="pais" value="<%= @tercero.pais %>" placeholder="Pais">
+			    </div>
+			  	<br>
+		  	</div>
+		  	<br>
+
+		  	<h3><span class="badge badge-secondary">Informacion adicional</span></h3>
+		  	<div class="row">
+			    <div class="col">
+			      <input type="phone" class="form-control" name="telefono" value="<%= @tercero.telefono %>" placeholder="Telefono">
+			    </div>
+			    <div class="col">
+			      <input type="email" class="form-control" name="correo" value="<%= @tercero.email %>" placeholder="Correo electronico">
+			    </div>
+			    <div class="col">
+			      <input type="text" class="form-control" name="pagina" value="<%= @tercero.sitio_web %>" placeholder="Pagina Web">
+			    </div>
+			    <div class="col">
+			   
+			    </div>
+		  	</div>
+		  	<br>
+		  	<div class="row">
+			    <div class="col">
+			      <input type="phone" class="form-control" name="rfc" value="<%= @tercero.rfc %>" placeholder="RFC">
+			    </div>
+			    <div class="col">
+			      <input type="text" class="form-control" name="forma_j" value="<%= @tercero.forma_juridica %>" placeholder="Forma juridica">
+			    </div>
+			    <div class="col">
+			      <select class="custom-select" id="inputGroupSelect05" value="<%= @tercero.estado_tercero %>" name="estado_tercero">
+			    	<option selected>Activo</option>
+			    	<option>Inactivo</option>
+				  </select>
+			    </div>
+		  	</div>
+		  	<br>
+		  	<center>
+		  	<div class="">
+	  			<button type="submit" name="nivel" value="n1" class="btn btn-success btn-lg">Guardar</button>
+	  			<button type="button" name="nivel" value="n3" class="btn btn-danger btn-lg" onclick="window.location.href ='/provedores_provedores?status=1';">Anular</button>
+		  	</div>
+		  	</center>
+		  	<br>
+		  	<br>
+
+		</div>
+	</form>
+</div>
+
+<style type="text/css">
+	form{
+		margin-top: 45px;
+	}
+
+	h1{
+		margin-top: 45px;
+	}
+	body{
+		background-color: #8b8d8e;
+	}
+</style>
+
+<script type="text/javascript">
+
+var vector = [];
+var numero = 0;
+
+	function agregar(){
+		console.log("dekjd");
+		var especialidad = $('#especi').val();
+		var tiempo = $('#anhos').val();
+		//console.log(texto);
+		//vector[numero] = texto
+		$('#exampleFormControlTextarea1').append(tiempo + " anhos de experiencia en "+ especialidad+"\n");
+		//numero = numero + 1;
+		//console.log(vector)
+		$('#especi').val("");
+		$('#anhos').val("");
+	}
+
+	function agregarEspecialidad(){
+		var cedula = $('#cedul').val();
+		var major = $('#major').val();
+		$('#exampleFormControlTextarea2').append("Carrera en "+major+" con la cedula "+cedula+"\n");
+		$('#cedul').val("");
+		$('#major').val("");
+	}
+
+
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	});
+
+
+	
+
+</script>
